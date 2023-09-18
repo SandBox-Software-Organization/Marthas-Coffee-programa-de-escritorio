@@ -32,8 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
@@ -43,23 +42,16 @@
             this.lblTipoPago = new System.Windows.Forms.Label();
             this.lblPagoTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPrecioB = new System.Windows.Forms.TextBox();
-            this.txtPrecioP = new System.Windows.Forms.TextBox();
-            this.combxTP = new System.Windows.Forms.ComboBox();
-            this.combxTem = new System.Windows.Forms.ComboBox();
-            this.combxTB = new System.Windows.Forms.ComboBox();
             this.txtNumO = new System.Windows.Forms.Label();
-            this.txtNomC = new System.Windows.Forms.TextBox();
-            this.lblCantidadP = new System.Windows.Forms.Label();
-            this.lblPrecioP = new System.Windows.Forms.Label();
-            this.lblTP = new System.Windows.Forms.Label();
-            this.lblCantidadB = new System.Windows.Forms.Label();
-            this.lblPrecioB = new System.Windows.Forms.Label();
-            this.lblTem = new System.Windows.Forms.Label();
-            this.lblTB = new System.Windows.Forms.Label();
+            this.txtNomCliente = new System.Windows.Forms.TextBox();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.Empleado = new System.Windows.Forms.Label();
             this.lblNumO = new System.Windows.Forms.Label();
             this.lblNomC = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbProductos = new System.Windows.Forms.ComboBox();
+            this.cmbEmpleados = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,27 +97,20 @@
             this.listView1.TabIndex = 85;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // label3
+            // lblTotal
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(373, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(11, 16);
-            this.label3.TabIndex = 84;
-            this.label3.Text = "-";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(137, 463);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(88, 20);
-            this.numericUpDown2.TabIndex = 83;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTotal.Location = new System.Drawing.Point(373, 87);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(11, 16);
+            this.lblTotal.TabIndex = 84;
+            this.lblTotal.Text = "-";
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(137, 302);
+            this.numericUpDown1.Location = new System.Drawing.Point(128, 392);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(88, 20);
             this.numericUpDown1.TabIndex = 82;
@@ -212,145 +197,52 @@
             this.label1.TabIndex = 74;
             this.label1.Text = "Pedido";
             // 
-            // txtPrecioB
-            // 
-            this.txtPrecioB.Location = new System.Drawing.Point(137, 251);
-            this.txtPrecioB.Name = "txtPrecioB";
-            this.txtPrecioB.Size = new System.Drawing.Size(88, 20);
-            this.txtPrecioB.TabIndex = 73;
-            // 
-            // txtPrecioP
-            // 
-            this.txtPrecioP.Location = new System.Drawing.Point(137, 411);
-            this.txtPrecioP.Name = "txtPrecioP";
-            this.txtPrecioP.Size = new System.Drawing.Size(88, 20);
-            this.txtPrecioP.TabIndex = 72;
-            // 
-            // combxTP
-            // 
-            this.combxTP.FormattingEnabled = true;
-            this.combxTP.Location = new System.Drawing.Point(137, 352);
-            this.combxTP.Name = "combxTP";
-            this.combxTP.Size = new System.Drawing.Size(88, 21);
-            this.combxTP.TabIndex = 71;
-            // 
-            // combxTem
-            // 
-            this.combxTem.FormattingEnabled = true;
-            this.combxTem.Location = new System.Drawing.Point(137, 206);
-            this.combxTem.Name = "combxTem";
-            this.combxTem.Size = new System.Drawing.Size(88, 21);
-            this.combxTem.TabIndex = 70;
-            // 
-            // combxTB
-            // 
-            this.combxTB.FormattingEnabled = true;
-            this.combxTB.Location = new System.Drawing.Point(137, 163);
-            this.combxTB.Name = "combxTB";
-            this.combxTB.Size = new System.Drawing.Size(88, 21);
-            this.combxTB.TabIndex = 69;
-            // 
             // txtNumO
             // 
             this.txtNumO.AutoSize = true;
             this.txtNumO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtNumO.Location = new System.Drawing.Point(169, 125);
+            this.txtNumO.Location = new System.Drawing.Point(178, 83);
             this.txtNumO.Name = "txtNumO";
             this.txtNumO.Size = new System.Drawing.Size(14, 16);
             this.txtNumO.TabIndex = 68;
             this.txtNumO.Text = "0";
             // 
-            // txtNomC
+            // txtNomCliente
             // 
-            this.txtNomC.Location = new System.Drawing.Point(137, 83);
-            this.txtNomC.Name = "txtNomC";
-            this.txtNomC.Size = new System.Drawing.Size(88, 20);
-            this.txtNomC.TabIndex = 67;
+            this.txtNomCliente.Location = new System.Drawing.Point(147, 143);
+            this.txtNomCliente.Name = "txtNomCliente";
+            this.txtNomCliente.Size = new System.Drawing.Size(88, 20);
+            this.txtNomCliente.TabIndex = 67;
             // 
-            // lblCantidadP
+            // lblCantidad
             // 
-            this.lblCantidadP.AutoSize = true;
-            this.lblCantidadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCantidadP.Location = new System.Drawing.Point(9, 463);
-            this.lblCantidadP.Name = "lblCantidadP";
-            this.lblCantidadP.Size = new System.Drawing.Size(61, 16);
-            this.lblCantidadP.TabIndex = 66;
-            this.lblCantidadP.Text = "Cantidad";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCantidad.Location = new System.Drawing.Point(27, 392);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(61, 16);
+            this.lblCantidad.TabIndex = 63;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // lblPrecioP
+            // Empleado
             // 
-            this.lblPrecioP.AutoSize = true;
-            this.lblPrecioP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPrecioP.Location = new System.Drawing.Point(9, 415);
-            this.lblPrecioP.Name = "lblPrecioP";
-            this.lblPrecioP.Size = new System.Drawing.Size(46, 16);
-            this.lblPrecioP.TabIndex = 65;
-            this.lblPrecioP.Text = "Precio";
-            // 
-            // lblTP
-            // 
-            this.lblTP.AutoSize = true;
-            this.lblTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTP.Location = new System.Drawing.Point(9, 357);
-            this.lblTP.Name = "lblTP";
-            this.lblTP.Size = new System.Drawing.Size(95, 16);
-            this.lblTP.TabIndex = 64;
-            this.lblTP.Text = "Tipo de postre";
-            // 
-            // lblCantidadB
-            // 
-            this.lblCantidadB.AutoSize = true;
-            this.lblCantidadB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCantidadB.Location = new System.Drawing.Point(9, 302);
-            this.lblCantidadB.Name = "lblCantidadB";
-            this.lblCantidadB.Size = new System.Drawing.Size(61, 16);
-            this.lblCantidadB.TabIndex = 63;
-            this.lblCantidadB.Text = "Cantidad";
-            // 
-            // lblPrecioB
-            // 
-            this.lblPrecioB.AutoSize = true;
-            this.lblPrecioB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPrecioB.Location = new System.Drawing.Point(9, 255);
-            this.lblPrecioB.Name = "lblPrecioB";
-            this.lblPrecioB.Size = new System.Drawing.Size(46, 16);
-            this.lblPrecioB.TabIndex = 62;
-            this.lblPrecioB.Text = "Precio";
-            // 
-            // lblTem
-            // 
-            this.lblTem.AutoSize = true;
-            this.lblTem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTem.Location = new System.Drawing.Point(9, 211);
-            this.lblTem.Name = "lblTem";
-            this.lblTem.Size = new System.Drawing.Size(85, 16);
-            this.lblTem.TabIndex = 61;
-            this.lblTem.Text = "Temperatura";
-            // 
-            // lblTB
-            // 
-            this.lblTB.AutoSize = true;
-            this.lblTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTB.Location = new System.Drawing.Point(9, 168);
-            this.lblTB.Name = "lblTB";
-            this.lblTB.Size = new System.Drawing.Size(100, 16);
-            this.lblTB.TabIndex = 60;
-            this.lblTB.Text = "Tipo de bebida";
+            this.Empleado.AutoSize = true;
+            this.Empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Empleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Empleado.Location = new System.Drawing.Point(12, 255);
+            this.Empleado.Name = "Empleado";
+            this.Empleado.Size = new System.Drawing.Size(70, 16);
+            this.Empleado.TabIndex = 62;
+            this.Empleado.Text = "Empleado";
             // 
             // lblNumO
             // 
             this.lblNumO.AutoSize = true;
             this.lblNumO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNumO.Location = new System.Drawing.Point(9, 125);
+            this.lblNumO.Location = new System.Drawing.Point(9, 83);
             this.lblNumO.Name = "lblNumO";
             this.lblNumO.Size = new System.Drawing.Size(112, 16);
             this.lblNumO.TabIndex = 59;
@@ -361,23 +253,64 @@
             this.lblNomC.AutoSize = true;
             this.lblNomC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNomC.Location = new System.Drawing.Point(9, 87);
+            this.lblNomC.Location = new System.Drawing.Point(9, 144);
             this.lblNomC.Name = "lblNomC";
             this.lblNomC.Size = new System.Drawing.Size(122, 16);
             this.lblNomC.TabIndex = 58;
             this.lblNomC.Text = "Nombre del Cliente";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(134, 255);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(11, 16);
+            this.label5.TabIndex = 89;
+            this.label5.Text = "-";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(12, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 16);
+            this.label6.TabIndex = 90;
+            this.label6.Text = "Productos";
+            // 
+            // cmbProductos
+            // 
+            this.cmbProductos.FormattingEnabled = true;
+            this.cmbProductos.Location = new System.Drawing.Point(113, 192);
+            this.cmbProductos.Name = "cmbProductos";
+            this.cmbProductos.Size = new System.Drawing.Size(122, 21);
+            this.cmbProductos.TabIndex = 91;
+            // 
+            // cmbEmpleados
+            // 
+            this.cmbEmpleados.FormattingEnabled = true;
+            this.cmbEmpleados.Location = new System.Drawing.Point(113, 254);
+            this.cmbEmpleados.Name = "cmbEmpleados";
+            this.cmbEmpleados.Size = new System.Drawing.Size(122, 21);
+            this.cmbEmpleados.TabIndex = 92;
             // 
             // frmCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 523);
+            this.Controls.Add(this.cmbEmpleados);
+            this.Controls.Add(this.cmbProductos);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCalcular);
@@ -387,25 +320,14 @@
             this.Controls.Add(this.lblTipoPago);
             this.Controls.Add(this.lblPagoTotal);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtPrecioB);
-            this.Controls.Add(this.txtPrecioP);
-            this.Controls.Add(this.combxTP);
-            this.Controls.Add(this.combxTem);
-            this.Controls.Add(this.combxTB);
             this.Controls.Add(this.txtNumO);
-            this.Controls.Add(this.txtNomC);
-            this.Controls.Add(this.lblCantidadP);
-            this.Controls.Add(this.lblPrecioP);
-            this.Controls.Add(this.lblTP);
-            this.Controls.Add(this.lblCantidadB);
-            this.Controls.Add(this.lblPrecioB);
-            this.Controls.Add(this.lblTem);
-            this.Controls.Add(this.lblTB);
+            this.Controls.Add(this.txtNomCliente);
+            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.Empleado);
             this.Controls.Add(this.lblNumO);
             this.Controls.Add(this.lblNomC);
             this.Name = "frmCaja";
             this.Text = "Formulario de caja";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -418,8 +340,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCalcular;
@@ -429,21 +350,15 @@
         private System.Windows.Forms.Label lblTipoPago;
         private System.Windows.Forms.Label lblPagoTotal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPrecioB;
-        private System.Windows.Forms.TextBox txtPrecioP;
-        private System.Windows.Forms.ComboBox combxTP;
-        private System.Windows.Forms.ComboBox combxTem;
-        private System.Windows.Forms.ComboBox combxTB;
         private System.Windows.Forms.Label txtNumO;
-        private System.Windows.Forms.TextBox txtNomC;
-        private System.Windows.Forms.Label lblCantidadP;
-        private System.Windows.Forms.Label lblPrecioP;
-        private System.Windows.Forms.Label lblTP;
-        private System.Windows.Forms.Label lblCantidadB;
-        private System.Windows.Forms.Label lblPrecioB;
-        private System.Windows.Forms.Label lblTem;
-        private System.Windows.Forms.Label lblTB;
+        private System.Windows.Forms.TextBox txtNomCliente;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label Empleado;
         private System.Windows.Forms.Label lblNumO;
         private System.Windows.Forms.Label lblNomC;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbProductos;
+        private System.Windows.Forms.ComboBox cmbEmpleados;
     }
 }

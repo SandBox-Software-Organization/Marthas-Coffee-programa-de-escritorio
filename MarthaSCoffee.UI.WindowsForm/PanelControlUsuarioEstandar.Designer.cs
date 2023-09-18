@@ -28,58 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTipoPago = new System.Windows.Forms.Button();
+            this.btnCaja = new System.Windows.Forms.Button();
+            this.btnDelivery = new System.Windows.Forms.Button();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button5
+            // btnTipoPago
             // 
-            this.button5.Location = new System.Drawing.Point(327, 234);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(146, 89);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Operadora";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnTipoPago.Location = new System.Drawing.Point(235, 224);
+            this.btnTipoPago.Name = "btnTipoPago";
+            this.btnTipoPago.Size = new System.Drawing.Size(146, 89);
+            this.btnTipoPago.TabIndex = 10;
+            this.btnTipoPago.Text = "Tipo de pago";
+            this.btnTipoPago.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnCaja
             // 
-            this.button4.Location = new System.Drawing.Point(151, 234);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 89);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Tipo de pago";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCaja.Location = new System.Drawing.Point(338, 129);
+            this.btnCaja.Name = "btnCaja";
+            this.btnCaja.Size = new System.Drawing.Size(146, 89);
+            this.btnCaja.TabIndex = 9;
+            this.btnCaja.Text = "Formulario de caja";
+            this.btnCaja.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelivery
             // 
-            this.button3.Location = new System.Drawing.Point(404, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 89);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Formulario de caja";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(235, 129);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 89);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Delivery";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(71, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 89);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Menú para clientes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDelivery.Location = new System.Drawing.Point(151, 129);
+            this.btnDelivery.Name = "btnDelivery";
+            this.btnDelivery.Size = new System.Drawing.Size(146, 89);
+            this.btnDelivery.TabIndex = 8;
+            this.btnDelivery.Text = "Delivery";
+            this.btnDelivery.UseVisualStyleBackColor = true;
             // 
             // lblBienvenido
             // 
@@ -96,11 +76,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 368);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTipoPago);
+            this.Controls.Add(this.btnCaja);
+            this.Controls.Add(this.btnDelivery);
             this.Controls.Add(this.lblBienvenido);
             this.Name = "PanelControlUsuarioEstandar";
             this.Text = "Panel de Control de Usuario Estandar";
@@ -110,12 +88,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTipoPago;
+        private System.Windows.Forms.Button btnCaja;
+        private System.Windows.Forms.Button btnDelivery;
         private System.Windows.Forms.Label lblBienvenido;
     }
 }

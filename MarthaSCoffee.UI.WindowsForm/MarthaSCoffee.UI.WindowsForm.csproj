@@ -61,23 +61,17 @@
     <Compile Include="Delivery.Designer.cs">
       <DependentUpon>Delivery.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Formulario Inicio de sesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formulario Inicio de sesion.Designer.cs">
+      <DependentUpon>Formulario Inicio de sesion.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioCaja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormularioCaja.Designer.cs">
       <DependentUpon>FormularioCaja.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenúCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenúCliente.Designer.cs">
-      <DependentUpon>MenúCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelControlUsuarioEstandar.cs">
       <SubType>Form</SubType>
@@ -99,14 +93,11 @@
     <EmbeddedResource Include="Delivery.resx">
       <DependentUpon>Delivery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario Inicio de sesion.resx">
+      <DependentUpon>Formulario Inicio de sesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioCaja.resx">
       <DependentUpon>FormularioCaja.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenúCliente.resx">
-      <DependentUpon>MenúCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelControlUsuarioEstandar.resx">
       <DependentUpon>PanelControlUsuarioEstandar.cs</DependentUpon>

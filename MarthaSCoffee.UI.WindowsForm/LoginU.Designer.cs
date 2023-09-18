@@ -1,6 +1,6 @@
 ﻿namespace MarthaSCoffee.UI.WindowsForm
 {
-    partial class Login
+    partial class LoginU
     {
         /// <summary>
         /// Variable del diseñador necesaria.
