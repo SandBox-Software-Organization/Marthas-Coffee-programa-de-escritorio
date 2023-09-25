@@ -32,5 +32,16 @@ namespace MarthaSCoffee.UI.WindowsForm.Properties {
                 return ((string)(this["MartasConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PC-IGABRIEL;Initial Catalog=BD_SISTEMA_MARTHAS_End;Integrated Securit" +
+            "y=True")]
+        public string BD_SISTEMA_MARTHAS_EndConnectionString {
+            get {
+                return ((string)(this["BD_SISTEMA_MARTHAS_EndConnectionString"]));
+            }
+        }
     }
 }

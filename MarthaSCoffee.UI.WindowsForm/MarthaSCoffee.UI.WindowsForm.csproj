@@ -55,23 +55,34 @@
     <Compile Include="Administración.Designer.cs">
       <DependentUpon>Administración.cs</DependentUpon>
     </Compile>
-    <Compile Include="Delivery.cs">
+    <Compile Include="BD_SISTEMA_MARTHAS_EndDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_SISTEMA_MARTHAS_EndDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAreas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Delivery.Designer.cs">
-      <DependentUpon>Delivery.cs</DependentUpon>
+    <Compile Include="FormAreas.Designer.cs">
+      <DependentUpon>FormAreas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario Inicio de sesion.cs">
+    <Compile Include="FormEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario Inicio de sesion.Designer.cs">
-      <DependentUpon>Formulario Inicio de sesion.cs</DependentUpon>
+    <Compile Include="FormEmpleados.Designer.cs">
+      <DependentUpon>FormEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioCaja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormularioCaja.Designer.cs">
       <DependentUpon>FormularioCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelControlUsuarioEstandar.cs">
       <SubType>Form</SubType>
@@ -90,14 +101,17 @@
     <EmbeddedResource Include="Administración.resx">
       <DependentUpon>Administración.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Delivery.resx">
-      <DependentUpon>Delivery.cs</DependentUpon>
+    <EmbeddedResource Include="FormAreas.resx">
+      <DependentUpon>FormAreas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario Inicio de sesion.resx">
-      <DependentUpon>Formulario Inicio de sesion.cs</DependentUpon>
+    <EmbeddedResource Include="FormEmpleados.resx">
+      <DependentUpon>FormEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioCaja.resx">
       <DependentUpon>FormularioCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelControlUsuarioEstandar.resx">
       <DependentUpon>PanelControlUsuarioEstandar.cs</DependentUpon>
@@ -110,10 +124,22 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TipoPago.resx">
       <DependentUpon>TipoPago.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BD_SISTEMA_MARTHAS_EndDataSet.xsc">
+      <DependentUpon>BD_SISTEMA_MARTHAS_EndDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_SISTEMA_MARTHAS_EndDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_SISTEMA_MARTHAS_EndDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_SISTEMA_MARTHAS_EndDataSet.xss">
+      <DependentUpon>BD_SISTEMA_MARTHAS_EndDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,6 +162,15 @@
       <Project>{69cd2557-2aa6-4673-92d6-b16fdf6cdcd4}</Project>
       <Name>MarthaSCoffee.LogicaDeNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3669255_ic_save_floppy_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2742782_archive_document_documents_file_files_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9004781_file_document_paper_page_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

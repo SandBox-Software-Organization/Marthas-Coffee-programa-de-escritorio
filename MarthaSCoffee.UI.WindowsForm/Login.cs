@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MarthaSCoffee.UI.WindowsForm
 {
-    public partial class Delivery : Form
+    public partial class Login : Form
     {
-        public Delivery()
+        public Login()
         {
             InitializeComponent();
         }
