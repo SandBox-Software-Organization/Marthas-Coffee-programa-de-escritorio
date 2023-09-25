@@ -31,7 +31,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.lblTotal = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -87,15 +86,6 @@
             this.label4.Size = new System.Drawing.Size(261, 25);
             this.label4.TabIndex = 86;
             this.label4.Text = "Estado actual del proceso";
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(523, 83);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(315, 396);
-            this.listView1.TabIndex = 85;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // lblTotal
             // 
@@ -309,7 +299,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label2);
@@ -339,7 +328,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
