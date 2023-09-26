@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MarthaSCoffee.UI.WindowsForm
 {
-    public partial class Administración : Form
+    public partial class Administracion : Form
     {
-        public Administración()
+        public Administracion()
         {
             InitializeComponent();
         }

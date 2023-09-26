@@ -1,6 +1,6 @@
 ﻿namespace MarthaSCoffee.UI.WindowsForm
 {
-    partial class Administración
+    partial class Administracion
     {
         /// <summary>
         /// Required designer variable.
