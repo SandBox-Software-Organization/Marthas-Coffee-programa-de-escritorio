@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Proveedores = new System.Windows.Forms.TabPage();
+            this.cmbProductos = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnMostrarProveedores = new System.Windows.Forms.Button();
             this.txtFK_IdProduct = new System.Windows.Forms.TextBox();
@@ -56,11 +57,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDAreas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cmbProductos = new System.Windows.Forms.ComboBox();
+            this.Productos = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.Proveedores.SuspendLayout();
             this.tbcAdministracion.SuspendLayout();
             this.Empleados.SuspendLayout();
             this.Areas.SuspendLayout();
+            this.Productos.SuspendLayout();
             this.SuspendLayout();
             // 
             // Proveedores
@@ -81,6 +92,14 @@
             this.Proveedores.TabIndex = 3;
             this.Proveedores.Text = "Proveedores";
             this.Proveedores.UseVisualStyleBackColor = true;
+            // 
+            // cmbProductos
+            // 
+            this.cmbProductos.FormattingEnabled = true;
+            this.cmbProductos.Location = new System.Drawing.Point(201, 202);
+            this.cmbProductos.Name = "cmbProductos";
+            this.cmbProductos.Size = new System.Drawing.Size(173, 21);
+            this.cmbProductos.TabIndex = 77;
             // 
             // btnCancelar
             // 
@@ -162,6 +181,7 @@
             this.tbcAdministracion.Controls.Add(this.Proveedores);
             this.tbcAdministracion.Controls.Add(this.Empleados);
             this.tbcAdministracion.Controls.Add(this.Areas);
+            this.tbcAdministracion.Controls.Add(this.Productos);
             this.tbcAdministracion.Location = new System.Drawing.Point(23, 29);
             this.tbcAdministracion.Name = "tbcAdministracion";
             this.tbcAdministracion.SelectedIndex = 0;
@@ -359,21 +379,114 @@
             this.label4.TabIndex = 69;
             this.label4.Text = "ID área";
             // 
-            // cmbProductos
+            // Productos
             // 
-            this.cmbProductos.FormattingEnabled = true;
-            this.cmbProductos.Location = new System.Drawing.Point(201, 202);
-            this.cmbProductos.Name = "cmbProductos";
-            this.cmbProductos.Size = new System.Drawing.Size(173, 21);
-            this.cmbProductos.TabIndex = 77;
+            this.Productos.Controls.Add(this.comboBox1);
+            this.Productos.Controls.Add(this.button1);
+            this.Productos.Controls.Add(this.button2);
+            this.Productos.Controls.Add(this.textBox1);
+            this.Productos.Controls.Add(this.textBox2);
+            this.Productos.Controls.Add(this.label5);
+            this.Productos.Controls.Add(this.label6);
+            this.Productos.Controls.Add(this.button3);
+            this.Productos.Controls.Add(this.label7);
+            this.Productos.Location = new System.Drawing.Point(4, 22);
+            this.Productos.Name = "Productos";
+            this.Productos.Size = new System.Drawing.Size(639, 379);
+            this.Productos.TabIndex = 6;
+            this.Productos.Text = "Productos";
+            this.Productos.UseVisualStyleBackColor = true;
             // 
-            // Administración
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(209, 198);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(173, 21);
+            this.comboBox1.TabIndex = 86;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+            this.button1.Location = new System.Drawing.Point(218, 264);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 70);
+            this.button1.TabIndex = 85;
+            this.button1.Text = "Cancelar producto";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+            this.button2.Location = new System.Drawing.Point(437, 44);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(164, 70);
+            this.button2.TabIndex = 84;
+            this.button2.Text = "Mostrar Productos";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(209, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(173, 20);
+            this.textBox1.TabIndex = 82;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(209, 121);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(173, 20);
+            this.textBox2.TabIndex = 79;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(37, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.TabIndex = 83;
+            this.label5.Text = "Id Producto";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(37, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 13);
+            this.label6.TabIndex = 81;
+            this.label6.Text = "Costo x unidad";
+            // 
+            // button3
+            // 
+            this.button3.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+            this.button3.Location = new System.Drawing.Point(40, 264);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(164, 70);
+            this.button3.TabIndex = 80;
+            this.button3.Text = "Guardar Producto";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(37, 124);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.TabIndex = 78;
+            this.label7.Text = "Nombre del producto";
+            // 
+            // Administracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 485);
             this.Controls.Add(this.tbcAdministracion);
-            this.Name = "Administración";
+            this.Name = "Administracion";
             this.Text = "Administración";
             this.Load += new System.EventHandler(this.Administración_Load);
             this.Proveedores.ResumeLayout(false);
@@ -383,6 +496,8 @@
             this.Empleados.PerformLayout();
             this.Areas.ResumeLayout(false);
             this.Areas.PerformLayout();
+            this.Productos.ResumeLayout(false);
+            this.Productos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -417,5 +532,15 @@
         private System.Windows.Forms.Button btnCancelarEM;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cmbProductos;
+        private System.Windows.Forms.TabPage Productos;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AreasBL.cs" />
     <Compile Include="EmpleadosBL.cs" />
+    <Compile Include="PagoBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

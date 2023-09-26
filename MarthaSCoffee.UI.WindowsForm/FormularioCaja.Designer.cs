@@ -30,16 +30,11 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.combxTipoOrden = new System.Windows.Forms.ComboBox();
-            this.combxTipoPago = new System.Windows.Forms.ComboBox();
             this.lblTipoOrden = new System.Windows.Forms.Label();
-            this.lblTipoPago = new System.Windows.Forms.Label();
-            this.lblPagoTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNumO = new System.Windows.Forms.Label();
             this.txtNomCliente = new System.Windows.Forms.TextBox();
@@ -51,6 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cmbProductos = new System.Windows.Forms.ComboBox();
             this.cmbEmpleados = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,29 +71,6 @@
             this.button1.TabIndex = 87;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(518, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(261, 25);
-            this.label4.TabIndex = 86;
-            this.label4.Text = "Estado actual del proceso";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTotal.Location = new System.Drawing.Point(373, 87);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(11, 16);
-            this.lblTotal.TabIndex = 84;
-            this.lblTotal.Text = "-";
             // 
             // numericUpDown1
             // 
@@ -136,14 +109,6 @@
             this.combxTipoOrden.Size = new System.Drawing.Size(89, 21);
             this.combxTipoOrden.TabIndex = 79;
             // 
-            // combxTipoPago
-            // 
-            this.combxTipoPago.FormattingEnabled = true;
-            this.combxTipoPago.Location = new System.Drawing.Point(390, 206);
-            this.combxTipoPago.Name = "combxTipoPago";
-            this.combxTipoPago.Size = new System.Drawing.Size(89, 21);
-            this.combxTipoPago.TabIndex = 78;
-            // 
             // lblTipoOrden
             // 
             this.lblTipoOrden.AutoSize = true;
@@ -154,28 +119,6 @@
             this.lblTipoOrden.Size = new System.Drawing.Size(92, 16);
             this.lblTipoOrden.TabIndex = 77;
             this.lblTipoOrden.Text = "Tipo de orden";
-            // 
-            // lblTipoPago
-            // 
-            this.lblTipoPago.AutoSize = true;
-            this.lblTipoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPago.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTipoPago.Location = new System.Drawing.Point(284, 211);
-            this.lblTipoPago.Name = "lblTipoPago";
-            this.lblTipoPago.Size = new System.Drawing.Size(89, 16);
-            this.lblTipoPago.TabIndex = 76;
-            this.lblTipoPago.Text = "Tipo de pago";
-            // 
-            // lblPagoTotal
-            // 
-            this.lblPagoTotal.AutoSize = true;
-            this.lblPagoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPagoTotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPagoTotal.Location = new System.Drawing.Point(279, 85);
-            this.lblPagoTotal.Name = "lblPagoTotal";
-            this.lblPagoTotal.Size = new System.Drawing.Size(88, 16);
-            this.lblPagoTotal.TabIndex = 75;
-            this.lblPagoTotal.Text = "Total a pagar";
             // 
             // label1
             // 
@@ -288,27 +231,32 @@
             this.cmbEmpleados.Size = new System.Drawing.Size(122, 21);
             this.cmbEmpleados.TabIndex = 92;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(287, 193);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(192, 43);
+            this.button3.TabIndex = 93;
+            this.button3.Text = "Realizar transacción";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // frmCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 523);
+            this.ClientSize = new System.Drawing.Size(586, 504);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.cmbEmpleados);
             this.Controls.Add(this.cmbProductos);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.combxTipoOrden);
-            this.Controls.Add(this.combxTipoPago);
             this.Controls.Add(this.lblTipoOrden);
-            this.Controls.Add(this.lblTipoPago);
-            this.Controls.Add(this.lblPagoTotal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNumO);
             this.Controls.Add(this.txtNomCliente);
@@ -328,16 +276,11 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.ComboBox combxTipoOrden;
-        private System.Windows.Forms.ComboBox combxTipoPago;
         private System.Windows.Forms.Label lblTipoOrden;
-        private System.Windows.Forms.Label lblTipoPago;
-        private System.Windows.Forms.Label lblPagoTotal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label txtNumO;
         private System.Windows.Forms.TextBox txtNomCliente;
@@ -349,5 +292,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbProductos;
         private System.Windows.Forms.ComboBox cmbEmpleados;
+        private System.Windows.Forms.Button button3;
     }
 }
