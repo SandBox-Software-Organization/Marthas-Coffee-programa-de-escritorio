@@ -44,6 +44,7 @@
     <Compile Include="AreasBL.cs" />
     <Compile Include="EmpleadosBL.cs" />
     <Compile Include="PagoBL.cs" />
+    <Compile Include="PedidosBLL.cs" />
     <Compile Include="ProductoBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedoresBL.cs" />

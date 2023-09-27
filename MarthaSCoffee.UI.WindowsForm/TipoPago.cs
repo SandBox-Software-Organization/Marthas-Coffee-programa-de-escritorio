@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MarthaSCoffee.EntidadesDeNegocios;
+using MarthaSCoffee.LogicaDeNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,11 @@ namespace MarthaSCoffee.UI.WindowsForm
         public TipoPago()
         {
             InitializeComponent();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

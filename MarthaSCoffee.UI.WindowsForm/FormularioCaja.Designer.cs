@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.MostrarRegistros = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,26 +46,26 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cmbProduc = new System.Windows.Forms.ComboBox();
             this.cmbEmpleados = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Realizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // MostrarRegistros
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(374, 360);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 52);
-            this.button2.TabIndex = 88;
-            this.button2.Text = "Imprimi factura";
-            this.button2.UseVisualStyleBackColor = false;
+            this.MostrarRegistros.BackColor = System.Drawing.Color.Transparent;
+            this.MostrarRegistros.ForeColor = System.Drawing.Color.Black;
+            this.MostrarRegistros.Location = new System.Drawing.Point(374, 403);
+            this.MostrarRegistros.Name = "MostrarRegistros";
+            this.MostrarRegistros.Size = new System.Drawing.Size(192, 52);
+            this.MostrarRegistros.TabIndex = 88;
+            this.MostrarRegistros.Text = "Mostrar registro";
+            this.MostrarRegistros.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(374, 297);
+            this.button1.Location = new System.Drawing.Point(374, 342);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 52);
             this.button1.TabIndex = 87;
@@ -84,7 +84,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(345, 39);
+            this.label2.Location = new System.Drawing.Point(369, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 25);
             this.label2.TabIndex = 81;
@@ -94,9 +94,9 @@
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.Transparent;
             this.btnCalcular.ForeColor = System.Drawing.Color.Black;
-            this.btnCalcular.Location = new System.Drawing.Point(390, 108);
+            this.btnCalcular.Location = new System.Drawing.Point(578, 32);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(192, 52);
+            this.btnCalcular.Size = new System.Drawing.Size(57, 32);
             this.btnCalcular.TabIndex = 80;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -104,7 +104,7 @@
             // combxTipoOrden
             // 
             this.combxTipoOrden.FormattingEnabled = true;
-            this.combxTipoOrden.Location = new System.Drawing.Point(493, 255);
+            this.combxTipoOrden.Location = new System.Drawing.Point(477, 83);
             this.combxTipoOrden.Name = "combxTipoOrden";
             this.combxTipoOrden.Size = new System.Drawing.Size(89, 21);
             this.combxTipoOrden.TabIndex = 79;
@@ -114,7 +114,7 @@
             this.lblTipoOrden.AutoSize = true;
             this.lblTipoOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoOrden.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTipoOrden.Location = new System.Drawing.Point(347, 256);
+            this.lblTipoOrden.Location = new System.Drawing.Point(371, 83);
             this.lblTipoOrden.Name = "lblTipoOrden";
             this.lblTipoOrden.Size = new System.Drawing.Size(92, 16);
             this.lblTipoOrden.TabIndex = 77;
@@ -231,26 +231,27 @@
             this.cmbEmpleados.Size = new System.Drawing.Size(122, 21);
             this.cmbEmpleados.TabIndex = 92;
             // 
-            // button3
+            // Realizar
             // 
-            this.button3.Location = new System.Drawing.Point(390, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(192, 43);
-            this.button3.TabIndex = 93;
-            this.button3.Text = "Realizar transacción";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Realizar.Location = new System.Drawing.Point(374, 206);
+            this.Realizar.Name = "Realizar";
+            this.Realizar.Size = new System.Drawing.Size(192, 43);
+            this.Realizar.TabIndex = 93;
+            this.Realizar.Text = "Realizar";
+            this.Realizar.UseVisualStyleBackColor = true;
+            this.Realizar.Click += new System.EventHandler(this.Realizar_Click);
             // 
             // frmCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 504);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Realizar);
             this.Controls.Add(this.cmbEmpleados);
             this.Controls.Add(this.cmbProduc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.MostrarRegistros);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label2);
@@ -266,6 +267,7 @@
             this.Controls.Add(this.lblNomC);
             this.Name = "frmCaja";
             this.Text = "Formulario de caja";
+            this.Load += new System.EventHandler(this.frmCaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -274,7 +276,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button MostrarRegistros;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
@@ -292,6 +294,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbProduc;
         private System.Windows.Forms.ComboBox cmbEmpleados;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Realizar;
     }
 }
