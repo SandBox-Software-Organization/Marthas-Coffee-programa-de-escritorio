@@ -159,7 +159,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Enabled = false;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "PanelControlUsuarioEstandar";
             this.Text = "Panel de Control de Usuario Estandar";
             this.panel1.ResumeLayout(false);

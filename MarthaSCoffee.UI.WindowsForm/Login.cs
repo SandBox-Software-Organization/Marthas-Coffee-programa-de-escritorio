@@ -16,8 +16,12 @@ namespace MarthaSCoffee.UI.WindowsForm
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public void cargar()
+        {
+            comboBox1.DataSource = UsuariosBL.ComboUsuarios(); comboBox1.DisplayMember = "TIPO_USUARIO";
+            comboBox1.ValueMember = "IDUSUARIO";
+        }
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

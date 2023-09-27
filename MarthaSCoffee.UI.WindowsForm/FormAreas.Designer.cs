@@ -105,7 +105,7 @@
             this.ClientSize = new System.Drawing.Size(338, 427);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormAreas";
             this.Text = "FormAreas";
             this.Load += new System.EventHandler(this.FormAreas_Load);
