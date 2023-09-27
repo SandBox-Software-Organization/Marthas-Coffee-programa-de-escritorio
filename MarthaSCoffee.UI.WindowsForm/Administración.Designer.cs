@@ -30,19 +30,13 @@
         {
             this.Proveedores = new System.Windows.Forms.TabPage();
             this.cmbProductos = new System.Windows.Forms.ComboBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnMostrarProveedores = new System.Windows.Forms.Button();
-            this.txtFK_IdProduct = new System.Windows.Forms.TextBox();
+            this.txt_IdProduct = new System.Windows.Forms.TextBox();
             this.txtNombreProveedor = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.lblIdproducto = new System.Windows.Forms.Label();
-            this.btnGuardarProveedor = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.tbcAdministracion = new System.Windows.Forms.TabControl();
             this.Empleados = new System.Windows.Forms.TabPage();
-            this.btnCancelarEM = new System.Windows.Forms.Button();
-            this.btnShowEmpleados = new System.Windows.Forms.Button();
-            this.btnSaveEmpleado = new System.Windows.Forms.Button();
             this.cmbAreas = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -50,23 +44,29 @@
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Areas = new System.Windows.Forms.TabPage();
-            this.CancelarArea = new System.Windows.Forms.Button();
-            this.MostrarAreas = new System.Windows.Forms.Button();
-            this.SaveAreas = new System.Windows.Forms.Button();
             this.txtNombreArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDAreas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Productos = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIdProducto = new System.Windows.Forms.TextBox();
+            this.txtNombreproducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtCostoXunidad = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnMostrarProveedores = new System.Windows.Forms.Button();
+            this.btnGuardarProveedor = new System.Windows.Forms.Button();
+            this.btnCancelarEM = new System.Windows.Forms.Button();
+            this.btnShowEmpleados = new System.Windows.Forms.Button();
+            this.btnSaveEmpleado = new System.Windows.Forms.Button();
+            this.CancelarArea = new System.Windows.Forms.Button();
+            this.MostrarAreas = new System.Windows.Forms.Button();
+            this.SaveAreas = new System.Windows.Forms.Button();
+            this.CancelarProduct = new System.Windows.Forms.Button();
+            this.MostrarProduct = new System.Windows.Forms.Button();
+            this.GuardarProduct = new System.Windows.Forms.Button();
             this.Proveedores.SuspendLayout();
             this.tbcAdministracion.SuspendLayout();
             this.Empleados.SuspendLayout();
@@ -79,7 +79,7 @@
             this.Proveedores.Controls.Add(this.cmbProductos);
             this.Proveedores.Controls.Add(this.btnCancelar);
             this.Proveedores.Controls.Add(this.btnMostrarProveedores);
-            this.Proveedores.Controls.Add(this.txtFK_IdProduct);
+            this.Proveedores.Controls.Add(this.txt_IdProduct);
             this.Proveedores.Controls.Add(this.txtNombreProveedor);
             this.Proveedores.Controls.Add(this.label24);
             this.Proveedores.Controls.Add(this.lblIdproducto);
@@ -101,35 +101,13 @@
             this.cmbProductos.Size = new System.Drawing.Size(173, 21);
             this.cmbProductos.TabIndex = 77;
             // 
-            // btnCancelar
+            // txt_IdProduct
             // 
-            this.btnCancelar.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
-            this.btnCancelar.Location = new System.Drawing.Point(210, 268);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(164, 70);
-            this.btnCancelar.TabIndex = 76;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnMostrarProveedores
-            // 
-            this.btnMostrarProveedores.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
-            this.btnMostrarProveedores.Location = new System.Drawing.Point(429, 48);
-            this.btnMostrarProveedores.Name = "btnMostrarProveedores";
-            this.btnMostrarProveedores.Size = new System.Drawing.Size(164, 70);
-            this.btnMostrarProveedores.TabIndex = 64;
-            this.btnMostrarProveedores.Text = "Mostrar datos guardados";
-            this.btnMostrarProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMostrarProveedores.UseVisualStyleBackColor = true;
-            // 
-            // txtFK_IdProduct
-            // 
-            this.txtFK_IdProduct.Enabled = false;
-            this.txtFK_IdProduct.Location = new System.Drawing.Point(201, 48);
-            this.txtFK_IdProduct.Name = "txtFK_IdProduct";
-            this.txtFK_IdProduct.Size = new System.Drawing.Size(173, 20);
-            this.txtFK_IdProduct.TabIndex = 57;
+            this.txt_IdProduct.Enabled = false;
+            this.txt_IdProduct.Location = new System.Drawing.Point(201, 48);
+            this.txt_IdProduct.Name = "txt_IdProduct";
+            this.txt_IdProduct.Size = new System.Drawing.Size(173, 20);
+            this.txt_IdProduct.TabIndex = 57;
             // 
             // txtNombreProveedor
             // 
@@ -155,17 +133,6 @@
             this.lblIdproducto.Size = new System.Drawing.Size(65, 13);
             this.lblIdproducto.TabIndex = 56;
             this.lblIdproducto.Text = "Id_Producto";
-            // 
-            // btnGuardarProveedor
-            // 
-            this.btnGuardarProveedor.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
-            this.btnGuardarProveedor.Location = new System.Drawing.Point(32, 268);
-            this.btnGuardarProveedor.Name = "btnGuardarProveedor";
-            this.btnGuardarProveedor.Size = new System.Drawing.Size(164, 70);
-            this.btnGuardarProveedor.TabIndex = 55;
-            this.btnGuardarProveedor.Text = "Guardar datos";
-            this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardarProveedor.UseVisualStyleBackColor = true;
             // 
             // label26
             // 
@@ -205,42 +172,6 @@
             this.Empleados.TabIndex = 4;
             this.Empleados.Text = "Empleados";
             this.Empleados.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelarEM
-            // 
-            this.btnCancelarEM.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
-            this.btnCancelarEM.Location = new System.Drawing.Point(198, 239);
-            this.btnCancelarEM.Name = "btnCancelarEM";
-            this.btnCancelarEM.Size = new System.Drawing.Size(164, 70);
-            this.btnCancelarEM.TabIndex = 75;
-            this.btnCancelarEM.Text = "Cancelar";
-            this.btnCancelarEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelarEM.UseVisualStyleBackColor = true;
-            this.btnCancelarEM.Click += new System.EventHandler(this.btnCancelarEM_Click);
-            // 
-            // btnShowEmpleados
-            // 
-            this.btnShowEmpleados.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
-            this.btnShowEmpleados.Location = new System.Drawing.Point(420, 50);
-            this.btnShowEmpleados.Name = "btnShowEmpleados";
-            this.btnShowEmpleados.Size = new System.Drawing.Size(164, 70);
-            this.btnShowEmpleados.TabIndex = 67;
-            this.btnShowEmpleados.Text = "Mostrar datos guardados";
-            this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnShowEmpleados.UseVisualStyleBackColor = true;
-            this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
-            // 
-            // btnSaveEmpleado
-            // 
-            this.btnSaveEmpleado.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
-            this.btnSaveEmpleado.Location = new System.Drawing.Point(28, 239);
-            this.btnSaveEmpleado.Name = "btnSaveEmpleado";
-            this.btnSaveEmpleado.Size = new System.Drawing.Size(164, 70);
-            this.btnSaveEmpleado.TabIndex = 66;
-            this.btnSaveEmpleado.Text = "Guardar datos";
-            this.btnSaveEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSaveEmpleado.UseVisualStyleBackColor = true;
-            this.btnSaveEmpleado.Click += new System.EventHandler(this.btnSaveEmpleado_Click);
             // 
             // cmbAreas
             // 
@@ -310,6 +241,178 @@
             this.Areas.Text = "Áreas";
             this.Areas.UseVisualStyleBackColor = true;
             // 
+            // txtNombreArea
+            // 
+            this.txtNombreArea.Location = new System.Drawing.Point(189, 126);
+            this.txtNombreArea.Name = "txtNombreArea";
+            this.txtNombreArea.Size = new System.Drawing.Size(173, 20);
+            this.txtNombreArea.TabIndex = 70;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "Nombre Área";
+            // 
+            // txtIDAreas
+            // 
+            this.txtIDAreas.Enabled = false;
+            this.txtIDAreas.Location = new System.Drawing.Point(189, 63);
+            this.txtIDAreas.Name = "txtIDAreas";
+            this.txtIDAreas.Size = new System.Drawing.Size(173, 20);
+            this.txtIDAreas.TabIndex = 68;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(25, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 69;
+            this.label4.Text = "ID área";
+            // 
+            // Productos
+            // 
+            this.Productos.Controls.Add(this.txtCostoXunidad);
+            this.Productos.Controls.Add(this.CancelarProduct);
+            this.Productos.Controls.Add(this.MostrarProduct);
+            this.Productos.Controls.Add(this.txtIdProducto);
+            this.Productos.Controls.Add(this.txtNombreproducto);
+            this.Productos.Controls.Add(this.label5);
+            this.Productos.Controls.Add(this.label6);
+            this.Productos.Controls.Add(this.GuardarProduct);
+            this.Productos.Controls.Add(this.label7);
+            this.Productos.Location = new System.Drawing.Point(4, 22);
+            this.Productos.Name = "Productos";
+            this.Productos.Size = new System.Drawing.Size(639, 379);
+            this.Productos.TabIndex = 6;
+            this.Productos.Text = "Productos";
+            this.Productos.UseVisualStyleBackColor = true;
+            // 
+            // txtIdProducto
+            // 
+            this.txtIdProducto.Enabled = false;
+            this.txtIdProducto.Location = new System.Drawing.Point(209, 44);
+            this.txtIdProducto.Name = "txtIdProducto";
+            this.txtIdProducto.Size = new System.Drawing.Size(173, 20);
+            this.txtIdProducto.TabIndex = 82;
+            // 
+            // txtNombreproducto
+            // 
+            this.txtNombreproducto.Location = new System.Drawing.Point(209, 121);
+            this.txtNombreproducto.Name = "txtNombreproducto";
+            this.txtNombreproducto.Size = new System.Drawing.Size(173, 20);
+            this.txtNombreproducto.TabIndex = 79;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(37, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.TabIndex = 83;
+            this.label5.Text = "Id Producto";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(37, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 13);
+            this.label6.TabIndex = 81;
+            this.label6.Text = "Costo x unidad";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(37, 124);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.TabIndex = 78;
+            this.label7.Text = "Nombre del producto";
+            // 
+            // txtCostoXunidad
+            // 
+            this.txtCostoXunidad.Location = new System.Drawing.Point(209, 194);
+            this.txtCostoXunidad.Name = "txtCostoXunidad";
+            this.txtCostoXunidad.Size = new System.Drawing.Size(173, 20);
+            this.txtCostoXunidad.TabIndex = 86;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+            this.btnCancelar.Location = new System.Drawing.Point(210, 268);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(164, 70);
+            this.btnCancelar.TabIndex = 76;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnMostrarProveedores
+            // 
+            this.btnMostrarProveedores.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+            this.btnMostrarProveedores.Location = new System.Drawing.Point(429, 48);
+            this.btnMostrarProveedores.Name = "btnMostrarProveedores";
+            this.btnMostrarProveedores.Size = new System.Drawing.Size(164, 70);
+            this.btnMostrarProveedores.TabIndex = 64;
+            this.btnMostrarProveedores.Text = "Mostrar datos guardados";
+            this.btnMostrarProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMostrarProveedores.UseVisualStyleBackColor = true;
+            this.btnMostrarProveedores.Click += new System.EventHandler(this.btnMostrarProveedores_Click);
+            // 
+            // btnGuardarProveedor
+            // 
+            this.btnGuardarProveedor.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+            this.btnGuardarProveedor.Location = new System.Drawing.Point(32, 268);
+            this.btnGuardarProveedor.Name = "btnGuardarProveedor";
+            this.btnGuardarProveedor.Size = new System.Drawing.Size(164, 70);
+            this.btnGuardarProveedor.TabIndex = 55;
+            this.btnGuardarProveedor.Text = "Guardar datos";
+            this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardarProveedor.UseVisualStyleBackColor = true;
+            this.btnGuardarProveedor.Click += new System.EventHandler(this.btnGuardarProveedor_Click);
+            // 
+            // btnCancelarEM
+            // 
+            this.btnCancelarEM.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+            this.btnCancelarEM.Location = new System.Drawing.Point(198, 239);
+            this.btnCancelarEM.Name = "btnCancelarEM";
+            this.btnCancelarEM.Size = new System.Drawing.Size(164, 70);
+            this.btnCancelarEM.TabIndex = 75;
+            this.btnCancelarEM.Text = "Cancelar";
+            this.btnCancelarEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelarEM.UseVisualStyleBackColor = true;
+            this.btnCancelarEM.Click += new System.EventHandler(this.btnCancelarEM_Click);
+            // 
+            // btnShowEmpleados
+            // 
+            this.btnShowEmpleados.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+            this.btnShowEmpleados.Location = new System.Drawing.Point(420, 50);
+            this.btnShowEmpleados.Name = "btnShowEmpleados";
+            this.btnShowEmpleados.Size = new System.Drawing.Size(164, 70);
+            this.btnShowEmpleados.TabIndex = 67;
+            this.btnShowEmpleados.Text = "Mostrar datos guardados";
+            this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnShowEmpleados.UseVisualStyleBackColor = true;
+            this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
+            // 
+            // btnSaveEmpleado
+            // 
+            this.btnSaveEmpleado.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+            this.btnSaveEmpleado.Location = new System.Drawing.Point(28, 239);
+            this.btnSaveEmpleado.Name = "btnSaveEmpleado";
+            this.btnSaveEmpleado.Size = new System.Drawing.Size(164, 70);
+            this.btnSaveEmpleado.TabIndex = 66;
+            this.btnSaveEmpleado.Text = "Guardar datos";
+            this.btnSaveEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSaveEmpleado.UseVisualStyleBackColor = true;
+            this.btnSaveEmpleado.Click += new System.EventHandler(this.btnSaveEmpleado_Click);
+            // 
             // CancelarArea
             // 
             this.CancelarArea.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
@@ -346,139 +449,41 @@
             this.SaveAreas.UseVisualStyleBackColor = true;
             this.SaveAreas.Click += new System.EventHandler(this.SaveAreas_Click);
             // 
-            // txtNombreArea
+            // CancelarProduct
             // 
-            this.txtNombreArea.Location = new System.Drawing.Point(189, 126);
-            this.txtNombreArea.Name = "txtNombreArea";
-            this.txtNombreArea.Size = new System.Drawing.Size(173, 20);
-            this.txtNombreArea.TabIndex = 70;
+            this.CancelarProduct.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+            this.CancelarProduct.Location = new System.Drawing.Point(218, 264);
+            this.CancelarProduct.Name = "CancelarProduct";
+            this.CancelarProduct.Size = new System.Drawing.Size(164, 70);
+            this.CancelarProduct.TabIndex = 85;
+            this.CancelarProduct.Text = "Cancelar producto";
+            this.CancelarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CancelarProduct.UseVisualStyleBackColor = true;
+            this.CancelarProduct.Click += new System.EventHandler(this.CancelarProduct_Click);
             // 
-            // label3
+            // MostrarProduct
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 71;
-            this.label3.Text = "Nombre Área";
+            this.MostrarProduct.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+            this.MostrarProduct.Location = new System.Drawing.Point(437, 44);
+            this.MostrarProduct.Name = "MostrarProduct";
+            this.MostrarProduct.Size = new System.Drawing.Size(164, 70);
+            this.MostrarProduct.TabIndex = 84;
+            this.MostrarProduct.Text = "Mostrar Productos";
+            this.MostrarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MostrarProduct.UseVisualStyleBackColor = true;
+            this.MostrarProduct.Click += new System.EventHandler(this.MostrarProduct_Click);
             // 
-            // txtIDAreas
+            // GuardarProduct
             // 
-            this.txtIDAreas.Enabled = false;
-            this.txtIDAreas.Location = new System.Drawing.Point(189, 63);
-            this.txtIDAreas.Name = "txtIDAreas";
-            this.txtIDAreas.Size = new System.Drawing.Size(173, 20);
-            this.txtIDAreas.TabIndex = 68;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 63);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 69;
-            this.label4.Text = "ID área";
-            // 
-            // Productos
-            // 
-            this.Productos.Controls.Add(this.comboBox1);
-            this.Productos.Controls.Add(this.button1);
-            this.Productos.Controls.Add(this.button2);
-            this.Productos.Controls.Add(this.textBox1);
-            this.Productos.Controls.Add(this.textBox2);
-            this.Productos.Controls.Add(this.label5);
-            this.Productos.Controls.Add(this.label6);
-            this.Productos.Controls.Add(this.button3);
-            this.Productos.Controls.Add(this.label7);
-            this.Productos.Location = new System.Drawing.Point(4, 22);
-            this.Productos.Name = "Productos";
-            this.Productos.Size = new System.Drawing.Size(639, 379);
-            this.Productos.TabIndex = 6;
-            this.Productos.Text = "Productos";
-            this.Productos.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(209, 198);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 21);
-            this.comboBox1.TabIndex = 86;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
-            this.button1.Location = new System.Drawing.Point(218, 264);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 70);
-            this.button1.TabIndex = 85;
-            this.button1.Text = "Cancelar producto";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
-            this.button2.Location = new System.Drawing.Point(437, 44);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 70);
-            this.button2.TabIndex = 84;
-            this.button2.Text = "Mostrar Productos";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(209, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 20);
-            this.textBox1.TabIndex = 82;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(209, 121);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 20);
-            this.textBox2.TabIndex = 79;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "Id Producto";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 81;
-            this.label6.Text = "Costo x unidad";
-            // 
-            // button3
-            // 
-            this.button3.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
-            this.button3.Location = new System.Drawing.Point(40, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 70);
-            this.button3.TabIndex = 80;
-            this.button3.Text = "Guardar Producto";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 124);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 13);
-            this.label7.TabIndex = 78;
-            this.label7.Text = "Nombre del producto";
+            this.GuardarProduct.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+            this.GuardarProduct.Location = new System.Drawing.Point(40, 264);
+            this.GuardarProduct.Name = "GuardarProduct";
+            this.GuardarProduct.Size = new System.Drawing.Size(164, 70);
+            this.GuardarProduct.TabIndex = 80;
+            this.GuardarProduct.Text = "Guardar Producto";
+            this.GuardarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.GuardarProduct.UseVisualStyleBackColor = true;
+            this.GuardarProduct.Click += new System.EventHandler(this.GuardarProduct_Click);
             // 
             // Administracion
             // 
@@ -505,7 +510,7 @@
         #endregion
         private System.Windows.Forms.TabPage Proveedores;
         private System.Windows.Forms.Button btnMostrarProveedores;
-        private System.Windows.Forms.TextBox txtFK_IdProduct;
+        private System.Windows.Forms.TextBox txt_IdProduct;
         private System.Windows.Forms.TextBox txtNombreProveedor;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label lblIdproducto;
@@ -533,14 +538,14 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cmbProductos;
         private System.Windows.Forms.TabPage Productos;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button CancelarProduct;
+        private System.Windows.Forms.Button MostrarProduct;
+        private System.Windows.Forms.TextBox txtIdProducto;
+        private System.Windows.Forms.TextBox txtNombreproducto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button GuardarProduct;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCostoXunidad;
     }
 }

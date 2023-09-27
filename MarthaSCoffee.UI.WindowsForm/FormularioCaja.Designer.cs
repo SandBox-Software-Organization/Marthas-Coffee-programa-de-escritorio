@@ -44,7 +44,7 @@
             this.lblNomC = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbProductos = new System.Windows.Forms.ComboBox();
+            this.cmbProduc = new System.Windows.Forms.ComboBox();
             this.cmbEmpleados = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -54,7 +54,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(287, 360);
+            this.button2.Location = new System.Drawing.Point(374, 360);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(192, 52);
             this.button2.TabIndex = 88;
@@ -65,7 +65,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(287, 302);
+            this.button1.Location = new System.Drawing.Point(374, 297);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 52);
             this.button1.TabIndex = 87;
@@ -74,7 +74,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(128, 392);
+            this.numericUpDown1.Location = new System.Drawing.Point(147, 374);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(88, 20);
             this.numericUpDown1.TabIndex = 82;
@@ -84,7 +84,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(282, 39);
+            this.label2.Location = new System.Drawing.Point(345, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 25);
             this.label2.TabIndex = 81;
@@ -94,7 +94,7 @@
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.Transparent;
             this.btnCalcular.ForeColor = System.Drawing.Color.Black;
-            this.btnCalcular.Location = new System.Drawing.Point(287, 132);
+            this.btnCalcular.Location = new System.Drawing.Point(390, 108);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(192, 52);
             this.btnCalcular.TabIndex = 80;
@@ -104,7 +104,7 @@
             // combxTipoOrden
             // 
             this.combxTipoOrden.FormattingEnabled = true;
-            this.combxTipoOrden.Location = new System.Drawing.Point(390, 260);
+            this.combxTipoOrden.Location = new System.Drawing.Point(493, 255);
             this.combxTipoOrden.Name = "combxTipoOrden";
             this.combxTipoOrden.Size = new System.Drawing.Size(89, 21);
             this.combxTipoOrden.TabIndex = 79;
@@ -114,7 +114,7 @@
             this.lblTipoOrden.AutoSize = true;
             this.lblTipoOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoOrden.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTipoOrden.Location = new System.Drawing.Point(284, 265);
+            this.lblTipoOrden.Location = new System.Drawing.Point(347, 256);
             this.lblTipoOrden.Name = "lblTipoOrden";
             this.lblTipoOrden.Size = new System.Drawing.Size(92, 16);
             this.lblTipoOrden.TabIndex = 77;
@@ -154,7 +154,7 @@
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCantidad.Location = new System.Drawing.Point(27, 392);
+            this.lblCantidad.Location = new System.Drawing.Point(11, 378);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(61, 16);
             this.lblCantidad.TabIndex = 63;
@@ -165,7 +165,7 @@
             this.Empleado.AutoSize = true;
             this.Empleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Empleado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Empleado.Location = new System.Drawing.Point(12, 255);
+            this.Empleado.Location = new System.Drawing.Point(9, 197);
             this.Empleado.Name = "Empleado";
             this.Empleado.Size = new System.Drawing.Size(70, 16);
             this.Empleado.TabIndex = 62;
@@ -209,31 +209,31 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(12, 193);
+            this.label6.Location = new System.Drawing.Point(9, 302);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 16);
             this.label6.TabIndex = 90;
             this.label6.Text = "Productos";
             // 
-            // cmbProductos
+            // cmbProduc
             // 
-            this.cmbProductos.FormattingEnabled = true;
-            this.cmbProductos.Location = new System.Drawing.Point(113, 192);
-            this.cmbProductos.Name = "cmbProductos";
-            this.cmbProductos.Size = new System.Drawing.Size(122, 21);
-            this.cmbProductos.TabIndex = 91;
+            this.cmbProduc.FormattingEnabled = true;
+            this.cmbProduc.Location = new System.Drawing.Point(147, 297);
+            this.cmbProduc.Name = "cmbProduc";
+            this.cmbProduc.Size = new System.Drawing.Size(122, 21);
+            this.cmbProduc.TabIndex = 91;
             // 
             // cmbEmpleados
             // 
             this.cmbEmpleados.FormattingEnabled = true;
-            this.cmbEmpleados.Location = new System.Drawing.Point(113, 254);
+            this.cmbEmpleados.Location = new System.Drawing.Point(147, 197);
             this.cmbEmpleados.Name = "cmbEmpleados";
             this.cmbEmpleados.Size = new System.Drawing.Size(122, 21);
             this.cmbEmpleados.TabIndex = 92;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(287, 193);
+            this.button3.Location = new System.Drawing.Point(390, 175);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(192, 43);
             this.button3.TabIndex = 93;
@@ -244,10 +244,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 504);
+            this.ClientSize = new System.Drawing.Size(647, 504);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.cmbEmpleados);
-            this.Controls.Add(this.cmbProductos);
+            this.Controls.Add(this.cmbProduc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
@@ -290,7 +290,7 @@
         private System.Windows.Forms.Label lblNomC;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmbProductos;
+        private System.Windows.Forms.ComboBox cmbProduc;
         private System.Windows.Forms.ComboBox cmbEmpleados;
         private System.Windows.Forms.Button button3;
     }
