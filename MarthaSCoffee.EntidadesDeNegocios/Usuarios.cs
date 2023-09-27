@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MarthaSCoffee.EntidadesDeNegocios
 {
-    internal class Usuarios
+    public class UsuariosBL
     {
+        public int IdUsuario { get; set; }
+        public string Tipo_Usuario { get; set; }
+        public string Password { get; set; }
     }
 }
