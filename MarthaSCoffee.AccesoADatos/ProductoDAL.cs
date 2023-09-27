@@ -12,7 +12,7 @@ namespace MarthaSCoffee.AccesoADatos
     {
         public static int Insertar(Producto producto)
         {
-            string consulta = string.Format("INSERT INTO PRODUCTOS(NOMBRE_PRODUCTO, COSTOXUNIDAD) VALUES('{0}')", producto.NombreProducto, producto.CostoxUnidad);
+            string consulta = string.Format("INSERT INTO PRODUCTOS(NOMBRE_PRODUCTO, COSTOXUNIDAD) VALUES('{0}', '{1}')", producto.NombreProducto, producto.CostoxUnidad);
             return ComunDB.EjecutarComando(consulta);
         }
         public static List<Producto> RellenarGRID()
@@ -27,6 +27,7 @@ namespace MarthaSCoffee.AccesoADatos
                 Producto xproducto = new Producto();
                 xproducto.IdProducto = Leer.GetInt32(0);
                 xproducto.NombreProducto = Leer.GetString(1);
+                xproducto.CostoxUnidad = Leer.GetInt32(2);
                 ListadoProducto.Add(xproducto);
             }
             return ListadoProducto;
@@ -44,6 +45,7 @@ namespace MarthaSCoffee.AccesoADatos
                 Producto xproducto = new Producto();
                 xproducto.IdProducto = Leer.GetInt32(0);
                 xproducto.NombreProducto = Leer.GetString(1);
+                xproducto.CostoxUnidad = Leer.GetInt32(2);
                 ListadoProducto.Add(xproducto);
             }
             return ListadoProducto;

@@ -45,6 +45,7 @@
     <Compile Include="ComunDB.cs" />
     <Compile Include="EmpleadosDAL.cs" />
     <Compile Include="PagoDAL.cs" />
+    <Compile Include="ProductoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

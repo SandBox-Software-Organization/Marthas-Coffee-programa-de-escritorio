@@ -44,7 +44,9 @@
     <Compile Include="AreasBL.cs" />
     <Compile Include="EmpleadosBL.cs" />
     <Compile Include="PagoBL.cs" />
+    <Compile Include="ProductoBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedoresDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MarthaSCoffee.AccesoADatos\MarthaSCoffee.AccesoADatos.csproj">
