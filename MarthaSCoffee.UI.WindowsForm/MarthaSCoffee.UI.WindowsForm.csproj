@@ -182,13 +182,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\3669255_ic_save_floppy_icon %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2742782_archive_document_documents_file_files_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9004781_file_document_paper_page_icon.png" />
+    <Content Include="Resources\Delivery.ico" />
+    <Content Include="Resources\Formulario de caja.ico" />
+    <Content Include="Resources\iniciar sesion.ico" />
+    <Content Include="Resources\Logo.png" />
+    <Content Include="Resources\Tipo de pago.ico" />
+    <Content Include="Resources\Usuario.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
