@@ -1,4 +1,5 @@
 ﻿using MarthaSCoffee.EntidadesDeNegocios;
+using MarthaSCoffee.LogicaDeNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,9 +18,14 @@ namespace MarthaSCoffee.UI.WindowsForm
         {
             InitializeComponent();
         }
-  
+        public void cargar()
+        {
+            comboBox1.DataSource = UsuariosBL.ComboUsuarios(); comboBox1.DisplayMember = "TIPO_USUARIO";
+            comboBox1.ValueMember = "IDUSUARIO";
+        }
         private void Login_Load(object sender, EventArgs e)
         {
+            cargar();
 
         }
 

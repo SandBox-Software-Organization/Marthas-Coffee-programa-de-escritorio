@@ -59,45 +59,5 @@ namespace MarthaSCoffee.UI.WindowsForm.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2742782_archive_document_documents_file_files_icon {
-            get {
-                object obj = ResourceManager.GetObject("2742782_archive_document_documents_file_files_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _3669255_ic_save_floppy_icon__1_ {
-            get {
-                object obj = ResourceManager.GetObject("3669255_ic_save_floppy_icon (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _9004781_file_document_paper_page_icon {
-            get {
-                object obj = ResourceManager.GetObject("9004781_file_document_paper_page_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap splog {
-            get {
-                object obj = ResourceManager.GetObject("splog", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

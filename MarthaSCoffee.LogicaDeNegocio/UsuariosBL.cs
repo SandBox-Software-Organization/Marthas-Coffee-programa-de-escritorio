@@ -10,7 +10,7 @@ namespace MarthaSCoffee.LogicaDeNegocio
 {
     public class UsuariosBL
     {
-        public static List<EntidadesDeNegocios.UsuariosBL> ComboUsuarios()
+        public static List<Usuarios> ComboUsuarios()
         {
             return UsuariosDAL.ComboUsuarios();
         }

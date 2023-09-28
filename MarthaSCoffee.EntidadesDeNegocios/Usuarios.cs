@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarthaSCoffee.EntidadesDeNegocios
 {
-    public class UsuariosBL
+    public class Usuarios
     {
         public int IdUsuario { get; set; }
         public string Tipo_Usuario { get; set; }

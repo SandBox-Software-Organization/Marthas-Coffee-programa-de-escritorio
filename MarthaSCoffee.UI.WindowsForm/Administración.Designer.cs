@@ -343,7 +343,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+           
             this.btnCancelar.Location = new System.Drawing.Point(210, 268);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(164, 70);
@@ -355,7 +355,7 @@
             // 
             // btnMostrarProveedores
             // 
-            this.btnMostrarProveedores.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+
             this.btnMostrarProveedores.Location = new System.Drawing.Point(429, 48);
             this.btnMostrarProveedores.Name = "btnMostrarProveedores";
             this.btnMostrarProveedores.Size = new System.Drawing.Size(164, 70);
@@ -366,8 +366,7 @@
             this.btnMostrarProveedores.Click += new System.EventHandler(this.btnMostrarProveedores_Click);
             // 
             // btnGuardarProveedor
-            // 
-            this.btnGuardarProveedor.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+          
             this.btnGuardarProveedor.Location = new System.Drawing.Point(32, 268);
             this.btnGuardarProveedor.Name = "btnGuardarProveedor";
             this.btnGuardarProveedor.Size = new System.Drawing.Size(164, 70);
@@ -379,7 +378,7 @@
             // 
             // btnCancelarEM
             // 
-            this.btnCancelarEM.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+          
             this.btnCancelarEM.Location = new System.Drawing.Point(198, 239);
             this.btnCancelarEM.Name = "btnCancelarEM";
             this.btnCancelarEM.Size = new System.Drawing.Size(164, 70);
@@ -391,7 +390,7 @@
             // 
             // btnShowEmpleados
             // 
-            this.btnShowEmpleados.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+         
             this.btnShowEmpleados.Location = new System.Drawing.Point(420, 50);
             this.btnShowEmpleados.Name = "btnShowEmpleados";
             this.btnShowEmpleados.Size = new System.Drawing.Size(164, 70);
@@ -403,7 +402,7 @@
             // 
             // btnSaveEmpleado
             // 
-            this.btnSaveEmpleado.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+         
             this.btnSaveEmpleado.Location = new System.Drawing.Point(28, 239);
             this.btnSaveEmpleado.Name = "btnSaveEmpleado";
             this.btnSaveEmpleado.Size = new System.Drawing.Size(164, 70);
@@ -415,7 +414,7 @@
             // 
             // CancelarArea
             // 
-            this.CancelarArea.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+    
             this.CancelarArea.Location = new System.Drawing.Point(198, 240);
             this.CancelarArea.Name = "CancelarArea";
             this.CancelarArea.Size = new System.Drawing.Size(164, 70);
@@ -427,7 +426,7 @@
             // 
             // MostrarAreas
             // 
-            this.MostrarAreas.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+       
             this.MostrarAreas.Location = new System.Drawing.Point(434, 63);
             this.MostrarAreas.Name = "MostrarAreas";
             this.MostrarAreas.Size = new System.Drawing.Size(164, 70);
@@ -439,7 +438,7 @@
             // 
             // SaveAreas
             // 
-            this.SaveAreas.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+        
             this.SaveAreas.Location = new System.Drawing.Point(28, 240);
             this.SaveAreas.Name = "SaveAreas";
             this.SaveAreas.Size = new System.Drawing.Size(164, 70);
@@ -451,7 +450,7 @@
             // 
             // CancelarProduct
             // 
-            this.CancelarProduct.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._9004781_file_document_paper_page_icon;
+
             this.CancelarProduct.Location = new System.Drawing.Point(218, 264);
             this.CancelarProduct.Name = "CancelarProduct";
             this.CancelarProduct.Size = new System.Drawing.Size(164, 70);
@@ -463,7 +462,7 @@
             // 
             // MostrarProduct
             // 
-            this.MostrarProduct.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._2742782_archive_document_documents_file_files_icon;
+      
             this.MostrarProduct.Location = new System.Drawing.Point(437, 44);
             this.MostrarProduct.Name = "MostrarProduct";
             this.MostrarProduct.Size = new System.Drawing.Size(164, 70);
@@ -475,7 +474,7 @@
             // 
             // GuardarProduct
             // 
-            this.GuardarProduct.Image = global::MarthaSCoffee.UI.WindowsForm.Properties.Resources._3669255_ic_save_floppy_icon__1_;
+  
             this.GuardarProduct.Location = new System.Drawing.Point(40, 264);
             this.GuardarProduct.Name = "GuardarProduct";
             this.GuardarProduct.Size = new System.Drawing.Size(164, 70);
