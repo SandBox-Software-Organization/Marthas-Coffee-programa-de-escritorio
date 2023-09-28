@@ -265,8 +265,8 @@
             this.Controls.Add(this.Empleado);
             this.Controls.Add(this.lblNumO);
             this.Controls.Add(this.lblNomC);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmCaja";
-            this.Text = "Formulario de caja";
             this.Load += new System.EventHandler(this.frmCaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);

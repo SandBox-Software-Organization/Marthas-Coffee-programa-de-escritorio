@@ -103,8 +103,8 @@
             this.ClientSize = new System.Drawing.Size(265, 361);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormProveedores";
-            this.Text = "FormProveedores";
             this.Load += new System.EventHandler(this.FormProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridProveedores)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

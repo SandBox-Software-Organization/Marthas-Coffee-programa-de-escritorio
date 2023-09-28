@@ -107,7 +107,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormAreas";
-            this.Text = "FormAreas";
             this.Load += new System.EventHandler(this.FormAreas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridAreas)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

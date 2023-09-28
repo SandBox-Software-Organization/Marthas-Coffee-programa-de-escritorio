@@ -34,13 +34,13 @@ namespace MarthaSCoffee.UI.WindowsForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cargar();
-            while (Leer.Read())
-            {
-                usuario = Convert.ToString(Leer["TIPO_USUARIO"]);
-                xclave = Convert.ToString(Leer["CONTRASEÑA"]);
-                x = Convert.ToString(Leer["permiso"]);
-            }
+          ///  cargar();
+          //  while (Leer.Read())
+          //  {
+           //  usuario = Convert.ToString(Leer["TIPO_USUARIO"]);
+           //  xclave = Convert.ToString(Leer["CONTRASEÑA"]);
+           //  x = Convert.ToString(Leer["permiso"]);
+            //}
 
         }
     }

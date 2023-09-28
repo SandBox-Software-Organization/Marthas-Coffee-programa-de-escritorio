@@ -41,6 +41,7 @@
             // GridProductos
             // 
             this.GridProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.GridProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridProductos.Location = new System.Drawing.Point(3, 3);
             this.GridProductos.Name = "GridProductos";
@@ -101,8 +102,8 @@
             this.ClientSize = new System.Drawing.Size(321, 424);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormProductos";
-            this.Text = "Productos";
             this.Load += new System.EventHandler(this.FormProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridProductos)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

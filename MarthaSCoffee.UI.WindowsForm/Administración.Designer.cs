@@ -30,13 +30,19 @@
         {
             this.Proveedores = new System.Windows.Forms.TabPage();
             this.cmbProductos = new System.Windows.Forms.ComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnMostrarProveedores = new System.Windows.Forms.Button();
             this.txt_IdProduct = new System.Windows.Forms.TextBox();
             this.txtNombreProveedor = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.lblIdproducto = new System.Windows.Forms.Label();
+            this.btnGuardarProveedor = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.tbcAdministracion = new System.Windows.Forms.TabControl();
             this.Empleados = new System.Windows.Forms.TabPage();
+            this.btnCancelarEM = new System.Windows.Forms.Button();
+            this.btnShowEmpleados = new System.Windows.Forms.Button();
+            this.btnSaveEmpleado = new System.Windows.Forms.Button();
             this.cmbAreas = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -44,29 +50,23 @@
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Areas = new System.Windows.Forms.TabPage();
+            this.CancelarArea = new System.Windows.Forms.Button();
+            this.MostrarAreas = new System.Windows.Forms.Button();
+            this.SaveAreas = new System.Windows.Forms.Button();
             this.txtNombreArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDAreas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Productos = new System.Windows.Forms.TabPage();
+            this.txtCostoXunidad = new System.Windows.Forms.TextBox();
+            this.CancelarProduct = new System.Windows.Forms.Button();
+            this.MostrarProduct = new System.Windows.Forms.Button();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.txtNombreproducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtCostoXunidad = new System.Windows.Forms.TextBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnMostrarProveedores = new System.Windows.Forms.Button();
-            this.btnGuardarProveedor = new System.Windows.Forms.Button();
-            this.btnCancelarEM = new System.Windows.Forms.Button();
-            this.btnShowEmpleados = new System.Windows.Forms.Button();
-            this.btnSaveEmpleado = new System.Windows.Forms.Button();
-            this.CancelarArea = new System.Windows.Forms.Button();
-            this.MostrarAreas = new System.Windows.Forms.Button();
-            this.SaveAreas = new System.Windows.Forms.Button();
-            this.CancelarProduct = new System.Windows.Forms.Button();
-            this.MostrarProduct = new System.Windows.Forms.Button();
             this.GuardarProduct = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.Proveedores.SuspendLayout();
             this.tbcAdministracion.SuspendLayout();
             this.Empleados.SuspendLayout();
@@ -101,6 +101,28 @@
             this.cmbProductos.Size = new System.Drawing.Size(173, 21);
             this.cmbProductos.TabIndex = 77;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(210, 268);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(164, 70);
+            this.btnCancelar.TabIndex = 76;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnMostrarProveedores
+            // 
+            this.btnMostrarProveedores.Location = new System.Drawing.Point(429, 48);
+            this.btnMostrarProveedores.Name = "btnMostrarProveedores";
+            this.btnMostrarProveedores.Size = new System.Drawing.Size(164, 70);
+            this.btnMostrarProveedores.TabIndex = 64;
+            this.btnMostrarProveedores.Text = "Mostrar datos guardados";
+            this.btnMostrarProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMostrarProveedores.UseVisualStyleBackColor = true;
+            this.btnMostrarProveedores.Click += new System.EventHandler(this.btnMostrarProveedores_Click);
+            // 
             // txt_IdProduct
             // 
             this.txt_IdProduct.Enabled = false;
@@ -133,6 +155,17 @@
             this.lblIdproducto.Size = new System.Drawing.Size(65, 13);
             this.lblIdproducto.TabIndex = 56;
             this.lblIdproducto.Text = "Id_Producto";
+            // 
+            // btnGuardarProveedor
+            // 
+            this.btnGuardarProveedor.Location = new System.Drawing.Point(32, 268);
+            this.btnGuardarProveedor.Name = "btnGuardarProveedor";
+            this.btnGuardarProveedor.Size = new System.Drawing.Size(164, 70);
+            this.btnGuardarProveedor.TabIndex = 55;
+            this.btnGuardarProveedor.Text = "Guardar datos";
+            this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardarProveedor.UseVisualStyleBackColor = true;
+            this.btnGuardarProveedor.Click += new System.EventHandler(this.btnGuardarProveedor_Click);
             // 
             // label26
             // 
@@ -172,6 +205,39 @@
             this.Empleados.TabIndex = 4;
             this.Empleados.Text = "Empleados";
             this.Empleados.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelarEM
+            // 
+            this.btnCancelarEM.Location = new System.Drawing.Point(198, 239);
+            this.btnCancelarEM.Name = "btnCancelarEM";
+            this.btnCancelarEM.Size = new System.Drawing.Size(164, 70);
+            this.btnCancelarEM.TabIndex = 75;
+            this.btnCancelarEM.Text = "Cancelar";
+            this.btnCancelarEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelarEM.UseVisualStyleBackColor = true;
+            this.btnCancelarEM.Click += new System.EventHandler(this.btnCancelarEM_Click);
+            // 
+            // btnShowEmpleados
+            // 
+            this.btnShowEmpleados.Location = new System.Drawing.Point(420, 50);
+            this.btnShowEmpleados.Name = "btnShowEmpleados";
+            this.btnShowEmpleados.Size = new System.Drawing.Size(164, 70);
+            this.btnShowEmpleados.TabIndex = 67;
+            this.btnShowEmpleados.Text = "Mostrar datos guardados";
+            this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnShowEmpleados.UseVisualStyleBackColor = true;
+            this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
+            // 
+            // btnSaveEmpleado
+            // 
+            this.btnSaveEmpleado.Location = new System.Drawing.Point(28, 239);
+            this.btnSaveEmpleado.Name = "btnSaveEmpleado";
+            this.btnSaveEmpleado.Size = new System.Drawing.Size(164, 70);
+            this.btnSaveEmpleado.TabIndex = 66;
+            this.btnSaveEmpleado.Text = "Guardar datos";
+            this.btnSaveEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSaveEmpleado.UseVisualStyleBackColor = true;
+            this.btnSaveEmpleado.Click += new System.EventHandler(this.btnSaveEmpleado_Click);
             // 
             // cmbAreas
             // 
@@ -241,6 +307,39 @@
             this.Areas.Text = "Áreas";
             this.Areas.UseVisualStyleBackColor = true;
             // 
+            // CancelarArea
+            // 
+            this.CancelarArea.Location = new System.Drawing.Point(198, 240);
+            this.CancelarArea.Name = "CancelarArea";
+            this.CancelarArea.Size = new System.Drawing.Size(164, 70);
+            this.CancelarArea.TabIndex = 74;
+            this.CancelarArea.Text = "Cancelar";
+            this.CancelarArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CancelarArea.UseVisualStyleBackColor = true;
+            this.CancelarArea.Click += new System.EventHandler(this.CancelarArea_Click);
+            // 
+            // MostrarAreas
+            // 
+            this.MostrarAreas.Location = new System.Drawing.Point(434, 63);
+            this.MostrarAreas.Name = "MostrarAreas";
+            this.MostrarAreas.Size = new System.Drawing.Size(164, 70);
+            this.MostrarAreas.TabIndex = 73;
+            this.MostrarAreas.Text = "Mostrar datos guardados";
+            this.MostrarAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MostrarAreas.UseVisualStyleBackColor = true;
+            this.MostrarAreas.Click += new System.EventHandler(this.MostrarAreas_Click);
+            // 
+            // SaveAreas
+            // 
+            this.SaveAreas.Location = new System.Drawing.Point(28, 240);
+            this.SaveAreas.Name = "SaveAreas";
+            this.SaveAreas.Size = new System.Drawing.Size(164, 70);
+            this.SaveAreas.TabIndex = 72;
+            this.SaveAreas.Text = "Guardar datos";
+            this.SaveAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SaveAreas.UseVisualStyleBackColor = true;
+            this.SaveAreas.Click += new System.EventHandler(this.SaveAreas_Click);
+            // 
             // txtNombreArea
             // 
             this.txtNombreArea.Location = new System.Drawing.Point(189, 126);
@@ -292,6 +391,35 @@
             this.Productos.Text = "Productos";
             this.Productos.UseVisualStyleBackColor = true;
             // 
+            // txtCostoXunidad
+            // 
+            this.txtCostoXunidad.Location = new System.Drawing.Point(209, 194);
+            this.txtCostoXunidad.Name = "txtCostoXunidad";
+            this.txtCostoXunidad.Size = new System.Drawing.Size(173, 20);
+            this.txtCostoXunidad.TabIndex = 86;
+            // 
+            // CancelarProduct
+            // 
+            this.CancelarProduct.Location = new System.Drawing.Point(218, 264);
+            this.CancelarProduct.Name = "CancelarProduct";
+            this.CancelarProduct.Size = new System.Drawing.Size(164, 70);
+            this.CancelarProduct.TabIndex = 85;
+            this.CancelarProduct.Text = "Cancelar producto";
+            this.CancelarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CancelarProduct.UseVisualStyleBackColor = true;
+            this.CancelarProduct.Click += new System.EventHandler(this.CancelarProduct_Click);
+            // 
+            // MostrarProduct
+            // 
+            this.MostrarProduct.Location = new System.Drawing.Point(437, 44);
+            this.MostrarProduct.Name = "MostrarProduct";
+            this.MostrarProduct.Size = new System.Drawing.Size(164, 70);
+            this.MostrarProduct.TabIndex = 84;
+            this.MostrarProduct.Text = "Mostrar Productos";
+            this.MostrarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MostrarProduct.UseVisualStyleBackColor = true;
+            this.MostrarProduct.Click += new System.EventHandler(this.MostrarProduct_Click);
+            // 
             // txtIdProducto
             // 
             this.txtIdProducto.Enabled = false;
@@ -325,156 +453,8 @@
             this.label6.TabIndex = 81;
             this.label6.Text = "Costo x unidad";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 124);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 13);
-            this.label7.TabIndex = 78;
-            this.label7.Text = "Nombre del producto";
-            // 
-            // txtCostoXunidad
-            // 
-            this.txtCostoXunidad.Location = new System.Drawing.Point(209, 194);
-            this.txtCostoXunidad.Name = "txtCostoXunidad";
-            this.txtCostoXunidad.Size = new System.Drawing.Size(173, 20);
-            this.txtCostoXunidad.TabIndex = 86;
-            // 
-            // btnCancelar
-            // 
-           
-            this.btnCancelar.Location = new System.Drawing.Point(210, 268);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(164, 70);
-            this.btnCancelar.TabIndex = 76;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnMostrarProveedores
-            // 
-
-            this.btnMostrarProveedores.Location = new System.Drawing.Point(429, 48);
-            this.btnMostrarProveedores.Name = "btnMostrarProveedores";
-            this.btnMostrarProveedores.Size = new System.Drawing.Size(164, 70);
-            this.btnMostrarProveedores.TabIndex = 64;
-            this.btnMostrarProveedores.Text = "Mostrar datos guardados";
-            this.btnMostrarProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMostrarProveedores.UseVisualStyleBackColor = true;
-            this.btnMostrarProveedores.Click += new System.EventHandler(this.btnMostrarProveedores_Click);
-            // 
-            // btnGuardarProveedor
-          
-            this.btnGuardarProveedor.Location = new System.Drawing.Point(32, 268);
-            this.btnGuardarProveedor.Name = "btnGuardarProveedor";
-            this.btnGuardarProveedor.Size = new System.Drawing.Size(164, 70);
-            this.btnGuardarProveedor.TabIndex = 55;
-            this.btnGuardarProveedor.Text = "Guardar datos";
-            this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardarProveedor.UseVisualStyleBackColor = true;
-            this.btnGuardarProveedor.Click += new System.EventHandler(this.btnGuardarProveedor_Click);
-            // 
-            // btnCancelarEM
-            // 
-          
-            this.btnCancelarEM.Location = new System.Drawing.Point(198, 239);
-            this.btnCancelarEM.Name = "btnCancelarEM";
-            this.btnCancelarEM.Size = new System.Drawing.Size(164, 70);
-            this.btnCancelarEM.TabIndex = 75;
-            this.btnCancelarEM.Text = "Cancelar";
-            this.btnCancelarEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelarEM.UseVisualStyleBackColor = true;
-            this.btnCancelarEM.Click += new System.EventHandler(this.btnCancelarEM_Click);
-            // 
-            // btnShowEmpleados
-            // 
-         
-            this.btnShowEmpleados.Location = new System.Drawing.Point(420, 50);
-            this.btnShowEmpleados.Name = "btnShowEmpleados";
-            this.btnShowEmpleados.Size = new System.Drawing.Size(164, 70);
-            this.btnShowEmpleados.TabIndex = 67;
-            this.btnShowEmpleados.Text = "Mostrar datos guardados";
-            this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnShowEmpleados.UseVisualStyleBackColor = true;
-            this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
-            // 
-            // btnSaveEmpleado
-            // 
-         
-            this.btnSaveEmpleado.Location = new System.Drawing.Point(28, 239);
-            this.btnSaveEmpleado.Name = "btnSaveEmpleado";
-            this.btnSaveEmpleado.Size = new System.Drawing.Size(164, 70);
-            this.btnSaveEmpleado.TabIndex = 66;
-            this.btnSaveEmpleado.Text = "Guardar datos";
-            this.btnSaveEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSaveEmpleado.UseVisualStyleBackColor = true;
-            this.btnSaveEmpleado.Click += new System.EventHandler(this.btnSaveEmpleado_Click);
-            // 
-            // CancelarArea
-            // 
-    
-            this.CancelarArea.Location = new System.Drawing.Point(198, 240);
-            this.CancelarArea.Name = "CancelarArea";
-            this.CancelarArea.Size = new System.Drawing.Size(164, 70);
-            this.CancelarArea.TabIndex = 74;
-            this.CancelarArea.Text = "Cancelar";
-            this.CancelarArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CancelarArea.UseVisualStyleBackColor = true;
-            this.CancelarArea.Click += new System.EventHandler(this.CancelarArea_Click);
-            // 
-            // MostrarAreas
-            // 
-       
-            this.MostrarAreas.Location = new System.Drawing.Point(434, 63);
-            this.MostrarAreas.Name = "MostrarAreas";
-            this.MostrarAreas.Size = new System.Drawing.Size(164, 70);
-            this.MostrarAreas.TabIndex = 73;
-            this.MostrarAreas.Text = "Mostrar datos guardados";
-            this.MostrarAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.MostrarAreas.UseVisualStyleBackColor = true;
-            this.MostrarAreas.Click += new System.EventHandler(this.MostrarAreas_Click);
-            // 
-            // SaveAreas
-            // 
-        
-            this.SaveAreas.Location = new System.Drawing.Point(28, 240);
-            this.SaveAreas.Name = "SaveAreas";
-            this.SaveAreas.Size = new System.Drawing.Size(164, 70);
-            this.SaveAreas.TabIndex = 72;
-            this.SaveAreas.Text = "Guardar datos";
-            this.SaveAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.SaveAreas.UseVisualStyleBackColor = true;
-            this.SaveAreas.Click += new System.EventHandler(this.SaveAreas_Click);
-            // 
-            // CancelarProduct
-            // 
-
-            this.CancelarProduct.Location = new System.Drawing.Point(218, 264);
-            this.CancelarProduct.Name = "CancelarProduct";
-            this.CancelarProduct.Size = new System.Drawing.Size(164, 70);
-            this.CancelarProduct.TabIndex = 85;
-            this.CancelarProduct.Text = "Cancelar producto";
-            this.CancelarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CancelarProduct.UseVisualStyleBackColor = true;
-            this.CancelarProduct.Click += new System.EventHandler(this.CancelarProduct_Click);
-            // 
-            // MostrarProduct
-            // 
-      
-            this.MostrarProduct.Location = new System.Drawing.Point(437, 44);
-            this.MostrarProduct.Name = "MostrarProduct";
-            this.MostrarProduct.Size = new System.Drawing.Size(164, 70);
-            this.MostrarProduct.TabIndex = 84;
-            this.MostrarProduct.Text = "Mostrar Productos";
-            this.MostrarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.MostrarProduct.UseVisualStyleBackColor = true;
-            this.MostrarProduct.Click += new System.EventHandler(this.MostrarProduct_Click);
-            // 
             // GuardarProduct
             // 
-  
             this.GuardarProduct.Location = new System.Drawing.Point(40, 264);
             this.GuardarProduct.Name = "GuardarProduct";
             this.GuardarProduct.Size = new System.Drawing.Size(164, 70);
@@ -484,14 +464,23 @@
             this.GuardarProduct.UseVisualStyleBackColor = true;
             this.GuardarProduct.Click += new System.EventHandler(this.GuardarProduct_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(37, 124);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 13);
+            this.label7.TabIndex = 78;
+            this.label7.Text = "Nombre del producto";
+            // 
             // Administracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 485);
             this.Controls.Add(this.tbcAdministracion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Administracion";
-            this.Text = "Administración";
             this.Load += new System.EventHandler(this.Administración_Load);
             this.Proveedores.ResumeLayout(false);
             this.Proveedores.PerformLayout();
