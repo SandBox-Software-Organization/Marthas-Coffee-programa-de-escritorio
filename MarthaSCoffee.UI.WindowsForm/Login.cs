@@ -18,6 +18,9 @@ namespace MarthaSCoffee.UI.WindowsForm
         {
             InitializeComponent();
         }
+        public string x = ""; // almacena los permisos de los usuarios
+        public string xclave;
+        public string usuario;
         public void cargar()
         {
             comboBox1.DataSource = UsuariosBL.ComboUsuarios(); comboBox1.DisplayMember = "TIPO_USUARIO";
@@ -31,6 +34,13 @@ namespace MarthaSCoffee.UI.WindowsForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            cargar();
+            while (Leer.Read())
+            {
+                usuario = Convert.ToString(Leer["TIPO_USUARIO"]);
+                xclave = Convert.ToString(Leer["CONTRASEÑA"]);
+                x = Convert.ToString(Leer["permiso"]);
+            }
 
         }
     }
