@@ -64,7 +64,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(137, 15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 20);
+            this.textBox1.Size = new System.Drawing.Size(198, 20);
             this.textBox1.TabIndex = 0;
             // 
             // comboBox1
@@ -75,7 +75,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(137, 15);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(347, 21);
+            this.comboBox1.Size = new System.Drawing.Size(198, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // label2
@@ -95,7 +95,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 490);
+            this.panel1.Size = new System.Drawing.Size(206, 416);
             this.panel1.TabIndex = 5;
             // 
             // pictureBox1
@@ -105,7 +105,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(11, 11);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 468);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 394);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -126,7 +126,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(190, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(116, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,7 +137,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(189, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(114, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(85, 69);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,18 +161,18 @@
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(216, 336);
+            this.panel5.Location = new System.Drawing.Point(216, 299);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(491, 46);
+            this.panel5.Size = new System.Drawing.Size(342, 46);
             this.panel5.TabIndex = 9;
             // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.pictureBox3);
-            this.panel6.Location = new System.Drawing.Point(216, 256);
+            this.panel6.Location = new System.Drawing.Point(216, 219);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(492, 75);
+            this.panel6.Size = new System.Drawing.Size(343, 75);
             this.panel6.TabIndex = 10;
             // 
             // panel4
@@ -180,45 +180,47 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.comboBox1);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(216, 204);
+            this.panel4.Location = new System.Drawing.Point(216, 167);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(491, 47);
+            this.panel4.Size = new System.Drawing.Size(342, 47);
             this.panel4.TabIndex = 8;
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(216, 130);
+            this.panel3.Location = new System.Drawing.Point(216, 93);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(491, 64);
+            this.panel3.Size = new System.Drawing.Size(342, 64);
             this.panel3.TabIndex = 7;
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(216, 56);
+            this.panel2.Location = new System.Drawing.Point(216, 19);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(491, 64);
+            this.panel2.Size = new System.Drawing.Size(342, 64);
             this.panel2.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(199, 18);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(14, 20);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(322, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Registrar";
+            this.button1.Text = "Iniciar sesion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel7
             // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.Controls.Add(this.button1);
-            this.panel7.Location = new System.Drawing.Point(216, 390);
+            this.panel7.Location = new System.Drawing.Point(216, 353);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(491, 55);
+            this.panel7.Size = new System.Drawing.Size(343, 57);
             this.panel7.TabIndex = 12;
             // 
             // Login
@@ -226,7 +228,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(99)))), ((int)(((byte)(78)))));
-            this.ClientSize = new System.Drawing.Size(712, 492);
+            this.ClientSize = new System.Drawing.Size(563, 418);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
