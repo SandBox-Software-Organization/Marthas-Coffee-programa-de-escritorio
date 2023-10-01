@@ -29,7 +29,7 @@ namespace MarthaSCoffee.AccesoADatos
                 Pago xpago = new Pago
                 {
                     IdPago = Leer.GetInt32(0),
-                    TipoPago = (float)Leer.GetFloat(1)
+                   // TipoPago = (float)Leer.GetFloat(1)
                 };
                 ListadoPago.Add(xpago);
             }
