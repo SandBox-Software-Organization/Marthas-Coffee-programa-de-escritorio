@@ -37,5 +37,23 @@ namespace MarthaSCoffee.AccesoADatos
             return Pedidos;
         }
 
+        public static List<Pago> formapago()
+        {
+            string consulta = string.Format("SELECT IDPAGO, TIPO_PAGO, MONTO_TOTAL FROM PAGO ");
+
+
+            IDataReader Leer = ComunDB.EjecutarComandoReader(consulta);
+            List<Pago> formapago = new List<Pago>();
+            while (Leer.Read())
+            {
+                Pago pago = new Pago();
+                pago.IdPago = Leer.GetInt32(0);
+                pago.TipoPago = Leer.GetString(1);
+                pago.MontoTotal = (float)Leer.GetDouble(2);
+                formapago.Add(pago);
+            }
+            return formapago;
+        }
+
     }
 }
