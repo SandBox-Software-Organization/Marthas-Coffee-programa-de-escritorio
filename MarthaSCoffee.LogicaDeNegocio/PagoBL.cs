@@ -8,12 +8,9 @@ using System.Threading.Tasks;
 
 namespace MarthaSCoffee.LogicaDeNegocio
 {
-    internal class PagoBL
+    public class PagoBL
     {
-        public static int Insertar(Pago pago)
-        {
-            return PagoDAL.Insertar(pago);
-        }
+     
                
         public static List<Pago> ComboPago()
         {

@@ -18,6 +18,14 @@ namespace MarthaSCoffee.UI.WindowsForm
         {
             InitializeComponent();
         }
+
+        public void Limpiar()
+        {
+            lblNumO.Text = string.Empty;
+            lblMontoTotal.Text = string.Empty;
+            txtNomCliente.Text = string.Empty;
+            numericUpDown1.Text = string.Empty;
+        }
         public void cargarComboBox()
         {
             cmbProduc.DataSource = ProductoBL.ComboProducto();
@@ -27,11 +35,22 @@ namespace MarthaSCoffee.UI.WindowsForm
             cmbEmpleados.DataSource = EmpleadosBL.empleados();
             cmbEmpleados.DisplayMember = "NOMBRE";
             cmbEmpleados.ValueMember = "IDEMPLEADO";
+
+
          
+        }
+        public void cargarComboBoxPago()
+        {
+ 
+            comboPago.DataSource = PagoBL.ComboPago();
+            comboPago.DisplayMember = "TIPO_PAGO";
+            comboPago.ValueMember = "IDPAGO";
+
         }
         private void frmCaja_Load(object sender, EventArgs e)
         {
             cargarComboBox();
+            cargarComboBoxPago();
         }
 
         private void Realizar_Click(object sender, EventArgs e)
@@ -63,14 +82,22 @@ namespace MarthaSCoffee.UI.WindowsForm
                     xpedido.FkIdProducto = FKProducto;
                     //PAGO
 
-                    TipoPago pago = new TipoPago();
-                    if (pago.ShowDialog() == DialogResult.OK)
-                    {
-                        ;
-                    }
+                    int FKPago;
+              
+                    int.TryParse(comboPago.SelectedValue.ToString(),out FKPago);
+                    xpedido.FK_IdPago = FKPago;
+                    float tipopago = (float)Convert.ToDouble(lblMontoTotal.Text);
+                    xpedido.MontoTotal = (float)tipopago;
+
+                    
+                   // TipoPago pago = new TipoPago();
+                    //if (pago.ShowDialog() == DialogResult.OK)
+                    //{
+                      //  ;
+                    //}
                     int resultado = PedidosBLL.Insertar(xpedido);
 
-
+                    Limpiar();
                   
                 }
             }

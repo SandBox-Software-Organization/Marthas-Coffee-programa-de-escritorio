@@ -21,10 +21,7 @@ namespace MarthaSCoffee.LogicaDeNegocio
             return PedidosDAL.RellenarGRID();
         }
 
-        public static List<Pago> formapago()
-        {
-            return PedidosDAL.formapago();
-        }
+ 
 
     }
 }

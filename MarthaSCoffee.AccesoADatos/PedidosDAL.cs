@@ -12,8 +12,8 @@ namespace MarthaSCoffee.AccesoADatos
     {
         public static int Insertar(Pedido pedido)
         {
-            string consulta = string.Format("INSERT INTO PEDIDOS(CLIENTE, FK_IDPRODUCTO, FK_IDEMPLEADO, FK_ID_PAGO) VALUES('{0}', '{1}', '{2}', '{3}')", 
-                pedido.Cliente, pedido.FkIdProducto, pedido.FKIdEmpleado, pedido.FK_IdPago);
+            string consulta = string.Format("INSERT INTO PEDIDOS(CLIENTE, FK_IDPRODUCTO, FK_IDEMPLEADO, FK_ID_PAGO, MONTO_TOTAL) VALUES('{0}', '{1}', '{2}', '{3}', '{4}')", 
+                pedido.Cliente, pedido.FkIdProducto, pedido.FKIdEmpleado, pedido.FK_IdPago, pedido.MontoTotal);
             return ComunDB.EjecutarComando(consulta);
         }
 
@@ -32,28 +32,12 @@ namespace MarthaSCoffee.AccesoADatos
                 xpedido.FkIdProducto = Leer.GetInt32(2);
                 xpedido.FKIdEmpleado = Leer.GetInt32(3);
                 xpedido.FK_IdPago = Leer.GetInt32(4);
+                xpedido.MontoTotal = (float)Leer.GetDouble(5);
                 Pedidos.Add(xpedido);
             }
             return Pedidos;
         }
 
-        public static List<Pago> formapago()
-        {
-            string consulta = string.Format("SELECT IDPAGO, TIPO_PAGO, MONTO_TOTAL FROM PAGO ");
-
-
-            IDataReader Leer = ComunDB.EjecutarComandoReader(consulta);
-            List<Pago> formapago = new List<Pago>();
-            while (Leer.Read())
-            {
-                Pago pago = new Pago();
-                pago.IdPago = Leer.GetInt32(0);
-                pago.TipoPago = Leer.GetString(1);
-                pago.MontoTotal = (float)Leer.GetDouble(2);
-                formapago.Add(pago);
-            }
-            return formapago;
-        }
 
     }
 }

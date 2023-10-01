@@ -14,5 +14,7 @@ namespace MarthaSCoffee.EntidadesDeNegocios
         public int FkIdProducto { get; set; }
         public int FKIdEmpleado { get; set; }
         public int FK_IdPago { get; set; }
+
+        public float MontoTotal { get; set; }
     }
 }

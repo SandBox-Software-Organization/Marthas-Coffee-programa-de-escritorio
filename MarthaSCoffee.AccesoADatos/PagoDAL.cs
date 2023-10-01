@@ -10,12 +10,7 @@ namespace MarthaSCoffee.AccesoADatos
 {
     public class PagoDAL
     {
-        public static int Insertar(Pago PAGO)
-        {
-            string consulta = string.Format("INSERT INTO PAGO(TIPO_PAGO, MONTO_TOTAL) VALUES('{0}')", PAGO.TipoPago, PAGO.MontoTotal);
-            return ComunDB.EjecutarComando(consulta);
-        }
-
+       
 
         public static List<Pago> ComboPago()
         {
@@ -23,17 +18,17 @@ namespace MarthaSCoffee.AccesoADatos
 
 
             IDataReader Leer = ComunDB.EjecutarComandoReader(consulta);
-            List<Pago> ListadoPago = new List<Pago>();
+            List<Pago> formPago = new List<Pago>();
             while (Leer.Read())
             {
                 Pago xpago = new Pago
                 {
                     IdPago = Leer.GetInt32(0),
-                   // TipoPago = (float)Leer.GetFloat(1)
+                    TipoPago = Leer.GetString(1)
                 };
-                ListadoPago.Add(xpago);
+                formPago.Add(xpago);
             }
-            return ListadoPago;
+            return formPago;
         }
     }
 }
