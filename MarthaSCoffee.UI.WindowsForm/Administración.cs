@@ -169,7 +169,7 @@ namespace MarthaSCoffee.UI.WindowsForm
                 {
 
                     Producto producto = new Producto();
-                    var costoXunidad = Convert.ToDouble(txtCostoXunidad.Text);
+                    float costoXunidad = (float)Convert.ToDouble(txtCostoXunidad.Text);
                     producto.NombreProducto = txtNombreproducto.Text.Trim().ToUpper();
                     producto.CostoxUnidad = (float)costoXunidad;
               

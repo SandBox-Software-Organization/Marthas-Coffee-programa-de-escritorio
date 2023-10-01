@@ -26,9 +26,11 @@ namespace MarthaSCoffee.AccesoADatos
             List<Pago> ListadoPago = new List<Pago>();
             while (Leer.Read())
             {
-                Pago xpago = new Pago();
-                xpago.IdPago = Leer.GetInt32(0);
-                xpago.TipoPago = Leer.GetString(1);
+                Pago xpago = new Pago
+                {
+                    IdPago = Leer.GetInt32(0),
+                    TipoPago = (float)Leer.GetFloat(1)
+                };
                 ListadoPago.Add(xpago);
             }
             return ListadoPago;
