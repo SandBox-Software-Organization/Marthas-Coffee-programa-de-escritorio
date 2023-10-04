@@ -55,9 +55,8 @@ namespace MarthaSCoffee.UI.WindowsForm
                     //y le pasamos la instancia ya con datos para que se guarde
 
                     //Este codigoes para guardar el area del empleado.
-                    int FKArea;
-                    int.TryParse(cmbAreas.SelectedValue.ToString(), out FKArea);
-                    empleados.Area = FKArea;
+              
+                    empleados.Area = Convert.ToInt32(cmbAreas.SelectedIndex)+1;
                     int resultado = EmpleadosBL.Insertar(empleados);
 
                     //Limpiamos los controles y enviamos el enfoque a txtNombre
@@ -128,10 +127,11 @@ namespace MarthaSCoffee.UI.WindowsForm
         //metodo que se encargara de los comboBox
         private void cargar()
         {
-            cmbAreas.DataSource = AreasBL.ComboAreas();
+            cmbAreas.DataSource = EmpleadosBL.Areas();
             cmbAreas.DisplayMember = "NOMBRE_AREA";
             cmbAreas.ValueMember = "IDAREA";
-       
+           
+
         }
 
         public void cargarproducts()
@@ -157,7 +157,7 @@ namespace MarthaSCoffee.UI.WindowsForm
 
         private void GuardarProduct_Click(object sender, EventArgs e)
         {
-            if (txtNombreproducto.Text.Trim() == "" || txtCostoXunidad.Text.Trim() == "")
+            if (txtNombreproducto.Text.Trim() == "" && txtCostoXunidad.Text.Trim() == "")
             {
                 MessageBox.Show("Complete los Campos Obligatorios", "Faltan Datos",
 
@@ -217,9 +217,8 @@ namespace MarthaSCoffee.UI.WindowsForm
 
                     xproveedor.Nombre_Proveedor = txtNombreProveedor.Text.Trim().ToUpper();
 
-                    int FKProduct;
-                    int.TryParse(cmbProductos.SelectedValue.ToString(), out FKProduct);
-                    xproveedor.FK_ID_Productos = FKProduct;
+                    xproveedor.FK_ID_Productos = Convert.ToInt32(cmbProductos.SelectedIndex) + 1;
+ 
                     int resultado = ProveedoresBL.Insertar(xproveedor);
 
 

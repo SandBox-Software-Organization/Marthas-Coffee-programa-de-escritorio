@@ -70,22 +70,18 @@ namespace MarthaSCoffee.UI.WindowsForm
                     Pedido xpedido = new Pedido();
 
                     xpedido.Cliente = txtNomCliente.Text.Trim().ToUpper();
-                   
+
                     //combo box empleado
-                    int FKEmpleado;
-                    int.TryParse(cmbEmpleados.SelectedValue.ToString(), out FKEmpleado);
-                    xpedido.FKIdEmpleado = FKEmpleado;
+                    xpedido.FKIdEmpleado = Convert.ToInt32(cmbEmpleados.SelectedIndex) + 1;
 
                     //combo box productos
-                    int FKProducto;
-                    int.TryParse(cmbProduc.SelectedValue.ToString(), out FKProducto);
-                    xpedido.FkIdProducto = FKProducto;
+                    xpedido.FkIdProducto = Convert.ToInt32(cmbProduc.SelectedIndex) + 1;
+
                     //PAGO
 
-                    int FKPago;
-              
-                    int.TryParse(comboPago.SelectedValue.ToString(),out FKPago);
-                    xpedido.FK_IdPago = FKPago;
+                    xpedido.FK_IdPago = Convert.ToInt32(comboPago.SelectedIndex) + 1;
+                   
+
                     float tipopago = (float)Convert.ToDouble(lblMontoTotal.Text);
                     xpedido.MontoTotal = (float)tipopago;
 

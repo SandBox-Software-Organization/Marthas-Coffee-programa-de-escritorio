@@ -12,7 +12,7 @@ namespace MarthaSCoffee.AccesoADatos
     {
         public static int Insertar(Empleados _EMPLEADO)
         {
-            string consulta = string.Format("INSERT INTO Empleados(NOMBRE, FK_ID_AREA) VALUES('{0}', '{1}')", _EMPLEADO.Nombre, _EMPLEADO.Area);
+            string consulta = string.Format("INSERT INTO EMPLEADOS(NOMBRE, FK_ID_AREA) VALUES('{0}', '{1}')", _EMPLEADO.Nombre, _EMPLEADO.Area);
             return ComunDB.EjecutarComando(consulta);
         }
         public static List<Empleados> RellenarGRID()
@@ -48,6 +48,22 @@ namespace MarthaSCoffee.AccesoADatos
                 ListadoEmpleados.Add(xempleado);
             }
             return ListadoEmpleados;
+        }
+        public static List<Areas> ComboXAreas()
+        {
+            string consulta = string.Format("SELECT IDAREA, NOMBRE_AREA FROM AREAS ");
+
+
+            IDataReader Leer = ComunDB.EjecutarComandoReader(consulta);
+            List<Areas> ListadoAreas = new List<Areas>();
+            while (Leer.Read())
+            {
+                Areas xarea = new Areas();
+                xarea.Id_Area = Leer.GetInt32(0);
+                xarea.Nombre_Area = Leer.GetString(1);
+                ListadoAreas.Add(xarea);
+            }
+            return ListadoAreas;
         }
     }
 }

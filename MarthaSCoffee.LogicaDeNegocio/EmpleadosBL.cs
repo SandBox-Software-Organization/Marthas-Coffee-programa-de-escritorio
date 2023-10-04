@@ -23,5 +23,9 @@ namespace MarthaSCoffee.LogicaDeNegocio
         {
             return EmpleadosDAL.empleados();
         }
+        public static List<Areas> Areas()
+        {
+            return EmpleadosDAL.ComboXAreas();
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace MarthaSCoffee.AccesoADatos
 {
     public class ComunDB
     {
-        const string StringDeConexion = @"Data Source=PC-IGABRIEL;Initial Catalog=BD_SISTEMA_MARTHAS_End;Integrated Security=True";
+        const string StringDeConexion = @"Data Source=PC-IGABRIEL;Initial Catalog=FINALLY_DB_SISTEMA_MARTHASCOFFE;Integrated Security=True";
 
         private static SqlConnection ObtenerConexion()
         {
