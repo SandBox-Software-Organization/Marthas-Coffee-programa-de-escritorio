@@ -1,4 +1,5 @@
-﻿using MarthaSCoffee.EntidadesDeNegocios;
+﻿using MarthaSCoffee.AccesoADatos;
+using MarthaSCoffee.EntidadesDeNegocios;
 using MarthaSCoffee.LogicaDeNegocio;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MarthaSCoffee.UI.WindowsForm
 {
@@ -32,6 +34,8 @@ namespace MarthaSCoffee.UI.WindowsForm
         private void frmCaja_Load(object sender, EventArgs e)
         {
             cargarComboBox();
+           
+
         }
 
         private void Realizar_Click(object sender, EventArgs e)

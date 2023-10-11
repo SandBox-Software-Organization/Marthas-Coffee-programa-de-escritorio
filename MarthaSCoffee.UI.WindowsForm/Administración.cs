@@ -1,13 +1,7 @@
 ﻿using MarthaSCoffee.EntidadesDeNegocios;
 using MarthaSCoffee.LogicaDeNegocio;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -142,12 +136,12 @@ namespace MarthaSCoffee.UI.WindowsForm
         }
         private void Administración_Load(object sender, EventArgs e)
         {
-
+            
             cargar();
             cargarproducts();
 
             // TODO: esta línea de código carga datos en la tabla 'bD_SISTEMA_MARTHAS_EndDataSet.AREAS' Puede moverla o quitarla según sea necesario.
-
+           
         }
 
 
@@ -240,6 +234,22 @@ namespace MarthaSCoffee.UI.WindowsForm
             {
                 ;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Estás seguro de querer cerrar la sesión?", "warning", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning) == DialogResult.Yes) this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmCaja mm = new frmCaja();
+            if (mm.ShowDialog() == DialogResult.OK)
+            {
+                ;
+            }
+
         }
     }
 }

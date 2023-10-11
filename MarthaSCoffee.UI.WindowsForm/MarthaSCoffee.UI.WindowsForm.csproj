@@ -90,12 +90,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelControlUsuarioEstandar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PanelControlUsuarioEstandar.Designer.cs">
-      <DependentUpon>PanelControlUsuarioEstandar.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,9 +127,6 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PanelControlUsuarioEstandar.resx">
-      <DependentUpon>PanelControlUsuarioEstandar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +163,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MarthaSCoffee.AccesoADatos\MarthaSCoffee.AccesoADatos.csproj">
+      <Project>{7C3C505A-A49F-419D-A5C1-EC6E2C27AFF5}</Project>
+      <Name>MarthaSCoffee.AccesoADatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MarthaSCoffee.EntidadesDeNegocios\MarthaSCoffee.EntidadesDeNegocios.csproj">
       <Project>{83cdf6ce-00bd-4387-9400-1ca8521b3df1}</Project>
       <Name>MarthaSCoffee.EntidadesDeNegocios</Name>
@@ -189,5 +184,6 @@
     <Content Include="Resources\Tipo de pago.ico" />
     <Content Include="Resources\Usuario.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

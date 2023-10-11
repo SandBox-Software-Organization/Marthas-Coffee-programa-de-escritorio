@@ -1,18 +1,16 @@
 ﻿using MarthaSCoffee.AccesoADatos;
 using MarthaSCoffee.EntidadesDeNegocios;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace MarthaSCoffee.LogicaDeNegocio
 {
     public class UsuariosBL
     {
-        public static List<Usuarios> ComboUsuarios()
+        UsuarioDAL UsuarioDAL = new UsuarioDAL();
+        public bool LOGINUSER(string user, string pass)
         {
-            return UsuariosDAL.ComboUsuarios();
+            return UsuarioDAL.LOGIN(user, pass);
         }
+
+     
+            
     }
 }

@@ -67,6 +67,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.GuardarProduct = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.Proveedores.SuspendLayout();
             this.tbcAdministracion.SuspendLayout();
             this.Empleados.SuspendLayout();
@@ -92,6 +94,7 @@
             this.Proveedores.TabIndex = 3;
             this.Proveedores.Text = "Proveedores";
             this.Proveedores.UseVisualStyleBackColor = true;
+            this.Proveedores.UseWaitCursor = true;
             // 
             // cmbProductos
             // 
@@ -100,6 +103,7 @@
             this.cmbProductos.Name = "cmbProductos";
             this.cmbProductos.Size = new System.Drawing.Size(173, 21);
             this.cmbProductos.TabIndex = 77;
+            this.cmbProductos.UseWaitCursor = true;
             // 
             // btnCancelar
             // 
@@ -110,6 +114,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseWaitCursor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnMostrarProveedores
@@ -121,6 +126,7 @@
             this.btnMostrarProveedores.Text = "Mostrar datos guardados";
             this.btnMostrarProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMostrarProveedores.UseVisualStyleBackColor = true;
+            this.btnMostrarProveedores.UseWaitCursor = true;
             this.btnMostrarProveedores.Click += new System.EventHandler(this.btnMostrarProveedores_Click);
             // 
             // txt_IdProduct
@@ -130,6 +136,7 @@
             this.txt_IdProduct.Name = "txt_IdProduct";
             this.txt_IdProduct.Size = new System.Drawing.Size(173, 20);
             this.txt_IdProduct.TabIndex = 57;
+            this.txt_IdProduct.UseWaitCursor = true;
             // 
             // txtNombreProveedor
             // 
@@ -137,6 +144,7 @@
             this.txtNombreProveedor.Name = "txtNombreProveedor";
             this.txtNombreProveedor.Size = new System.Drawing.Size(173, 20);
             this.txtNombreProveedor.TabIndex = 54;
+            this.txtNombreProveedor.UseWaitCursor = true;
             // 
             // label24
             // 
@@ -146,6 +154,7 @@
             this.label24.Size = new System.Drawing.Size(68, 13);
             this.label24.TabIndex = 58;
             this.label24.Text = "Id Proveedor";
+            this.label24.UseWaitCursor = true;
             // 
             // lblIdproducto
             // 
@@ -155,6 +164,7 @@
             this.lblIdproducto.Size = new System.Drawing.Size(65, 13);
             this.lblIdproducto.TabIndex = 56;
             this.lblIdproducto.Text = "Id_Producto";
+            this.lblIdproducto.UseWaitCursor = true;
             // 
             // btnGuardarProveedor
             // 
@@ -165,6 +175,7 @@
             this.btnGuardarProveedor.Text = "Guardar datos";
             this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardarProveedor.UseVisualStyleBackColor = true;
+            this.btnGuardarProveedor.UseWaitCursor = true;
             this.btnGuardarProveedor.Click += new System.EventHandler(this.btnGuardarProveedor_Click);
             // 
             // label26
@@ -175,6 +186,7 @@
             this.label26.Size = new System.Drawing.Size(112, 13);
             this.label26.TabIndex = 53;
             this.label26.Text = "Nombre del proveedor";
+            this.label26.UseWaitCursor = true;
             // 
             // tbcAdministracion
             // 
@@ -187,6 +199,7 @@
             this.tbcAdministracion.SelectedIndex = 0;
             this.tbcAdministracion.Size = new System.Drawing.Size(647, 405);
             this.tbcAdministracion.TabIndex = 0;
+            this.tbcAdministracion.UseWaitCursor = true;
             // 
             // Empleados
             // 
@@ -205,6 +218,7 @@
             this.Empleados.TabIndex = 4;
             this.Empleados.Text = "Empleados";
             this.Empleados.UseVisualStyleBackColor = true;
+            this.Empleados.UseWaitCursor = true;
             // 
             // btnCancelarEM
             // 
@@ -215,6 +229,7 @@
             this.btnCancelarEM.Text = "Cancelar";
             this.btnCancelarEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelarEM.UseVisualStyleBackColor = true;
+            this.btnCancelarEM.UseWaitCursor = true;
             this.btnCancelarEM.Click += new System.EventHandler(this.btnCancelarEM_Click);
             // 
             // btnShowEmpleados
@@ -226,6 +241,7 @@
             this.btnShowEmpleados.Text = "Mostrar datos guardados";
             this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShowEmpleados.UseVisualStyleBackColor = true;
+            this.btnShowEmpleados.UseWaitCursor = true;
             this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
             // 
             // btnSaveEmpleado
@@ -237,6 +253,7 @@
             this.btnSaveEmpleado.Text = "Guardar datos";
             this.btnSaveEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSaveEmpleado.UseVisualStyleBackColor = true;
+            this.btnSaveEmpleado.UseWaitCursor = true;
             this.btnSaveEmpleado.Click += new System.EventHandler(this.btnSaveEmpleado_Click);
             // 
             // cmbAreas
@@ -247,6 +264,7 @@
             this.cmbAreas.Name = "cmbAreas";
             this.cmbAreas.Size = new System.Drawing.Size(172, 21);
             this.cmbAreas.TabIndex = 65;
+            this.cmbAreas.UseWaitCursor = true;
             this.cmbAreas.ValueMember = "IDAREA";
             // 
             // label2
@@ -257,6 +275,7 @@
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 64;
             this.label2.Text = "Área";
+            this.label2.UseWaitCursor = true;
             // 
             // txtNombre
             // 
@@ -264,6 +283,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(172, 20);
             this.txtNombre.TabIndex = 61;
+            this.txtNombre.UseWaitCursor = true;
             // 
             // c
             // 
@@ -273,6 +293,7 @@
             this.c.Size = new System.Drawing.Size(49, 13);
             this.c.TabIndex = 62;
             this.c.Text = "Nombres";
+            this.c.UseWaitCursor = true;
             // 
             // txtIdEmpleado
             // 
@@ -281,6 +302,7 @@
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(172, 20);
             this.txtIdEmpleado.TabIndex = 59;
+            this.txtIdEmpleado.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -290,6 +312,7 @@
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 60;
             this.label1.Text = "ID Empleado";
+            this.label1.UseWaitCursor = true;
             // 
             // Areas
             // 
@@ -306,6 +329,7 @@
             this.Areas.TabIndex = 5;
             this.Areas.Text = "Áreas";
             this.Areas.UseVisualStyleBackColor = true;
+            this.Areas.UseWaitCursor = true;
             // 
             // CancelarArea
             // 
@@ -316,6 +340,7 @@
             this.CancelarArea.Text = "Cancelar";
             this.CancelarArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarArea.UseVisualStyleBackColor = true;
+            this.CancelarArea.UseWaitCursor = true;
             this.CancelarArea.Click += new System.EventHandler(this.CancelarArea_Click);
             // 
             // MostrarAreas
@@ -327,6 +352,7 @@
             this.MostrarAreas.Text = "Mostrar datos guardados";
             this.MostrarAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.MostrarAreas.UseVisualStyleBackColor = true;
+            this.MostrarAreas.UseWaitCursor = true;
             this.MostrarAreas.Click += new System.EventHandler(this.MostrarAreas_Click);
             // 
             // SaveAreas
@@ -338,6 +364,7 @@
             this.SaveAreas.Text = "Guardar datos";
             this.SaveAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SaveAreas.UseVisualStyleBackColor = true;
+            this.SaveAreas.UseWaitCursor = true;
             this.SaveAreas.Click += new System.EventHandler(this.SaveAreas_Click);
             // 
             // txtNombreArea
@@ -346,6 +373,7 @@
             this.txtNombreArea.Name = "txtNombreArea";
             this.txtNombreArea.Size = new System.Drawing.Size(173, 20);
             this.txtNombreArea.TabIndex = 70;
+            this.txtNombreArea.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -355,6 +383,7 @@
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 71;
             this.label3.Text = "Nombre Área";
+            this.label3.UseWaitCursor = true;
             // 
             // txtIDAreas
             // 
@@ -363,6 +392,7 @@
             this.txtIDAreas.Name = "txtIDAreas";
             this.txtIDAreas.Size = new System.Drawing.Size(173, 20);
             this.txtIDAreas.TabIndex = 68;
+            this.txtIDAreas.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -372,6 +402,7 @@
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 69;
             this.label4.Text = "ID área";
+            this.label4.UseWaitCursor = true;
             // 
             // Productos
             // 
@@ -390,6 +421,7 @@
             this.Productos.TabIndex = 6;
             this.Productos.Text = "Productos";
             this.Productos.UseVisualStyleBackColor = true;
+            this.Productos.UseWaitCursor = true;
             // 
             // txtCostoXunidad
             // 
@@ -397,6 +429,7 @@
             this.txtCostoXunidad.Name = "txtCostoXunidad";
             this.txtCostoXunidad.Size = new System.Drawing.Size(173, 20);
             this.txtCostoXunidad.TabIndex = 86;
+            this.txtCostoXunidad.UseWaitCursor = true;
             // 
             // CancelarProduct
             // 
@@ -407,6 +440,7 @@
             this.CancelarProduct.Text = "Cancelar producto";
             this.CancelarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarProduct.UseVisualStyleBackColor = true;
+            this.CancelarProduct.UseWaitCursor = true;
             this.CancelarProduct.Click += new System.EventHandler(this.CancelarProduct_Click);
             // 
             // MostrarProduct
@@ -418,6 +452,7 @@
             this.MostrarProduct.Text = "Mostrar Productos";
             this.MostrarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.MostrarProduct.UseVisualStyleBackColor = true;
+            this.MostrarProduct.UseWaitCursor = true;
             this.MostrarProduct.Click += new System.EventHandler(this.MostrarProduct_Click);
             // 
             // txtIdProducto
@@ -427,6 +462,7 @@
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(173, 20);
             this.txtIdProducto.TabIndex = 82;
+            this.txtIdProducto.UseWaitCursor = true;
             // 
             // txtNombreproducto
             // 
@@ -434,6 +470,7 @@
             this.txtNombreproducto.Name = "txtNombreproducto";
             this.txtNombreproducto.Size = new System.Drawing.Size(173, 20);
             this.txtNombreproducto.TabIndex = 79;
+            this.txtNombreproducto.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -443,6 +480,7 @@
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 83;
             this.label5.Text = "Id Producto";
+            this.label5.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -452,6 +490,7 @@
             this.label6.Size = new System.Drawing.Size(77, 13);
             this.label6.TabIndex = 81;
             this.label6.Text = "Costo x unidad";
+            this.label6.UseWaitCursor = true;
             // 
             // GuardarProduct
             // 
@@ -462,6 +501,7 @@
             this.GuardarProduct.Text = "Guardar Producto";
             this.GuardarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.GuardarProduct.UseVisualStyleBackColor = true;
+            this.GuardarProduct.UseWaitCursor = true;
             this.GuardarProduct.Click += new System.EventHandler(this.GuardarProduct_Click);
             // 
             // label7
@@ -472,12 +512,35 @@
             this.label7.Size = new System.Drawing.Size(106, 13);
             this.label7.TabIndex = 78;
             this.label7.Text = "Nombre del producto";
+            this.label7.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(27, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Cerrar seción";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(140, 440);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = " Caja";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Administracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 485);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbcAdministracion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Administracion";
@@ -535,5 +598,7 @@
         private System.Windows.Forms.Button GuardarProduct;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCostoXunidad;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

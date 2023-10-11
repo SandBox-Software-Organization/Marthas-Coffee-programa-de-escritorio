@@ -10,9 +10,9 @@ namespace MarthaSCoffee.AccesoADatos
 {
     public class ComunDB
     {
-        const string StringDeConexion = @"Data Source=DESKTOP-OAO2BUA\MSSQLSERVER01;Initial Catalog=BD_SISTEMA_MARTHAS_End;Integrated Security=True";
-
-        private static SqlConnection ObtenerConexion()
+        public const string StringDeConexion = @"Data Source=DESKTOP-OAO2BUA\MSSQLSERVER01;Initial Catalog=FINALLY_DB_SISTEMA_MARTHASCOFFE;Integrated Security=True";
+        
+        public static SqlConnection ObtenerConexion()
         {
             SqlConnection _conexion = new SqlConnection(StringDeConexion);
             _conexion.Open();

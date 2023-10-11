@@ -17,7 +17,7 @@ namespace MarthaSCoffee.UI.WindowsForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormProductos());
+            Application.Run(new Login());
         }
     }
 }
