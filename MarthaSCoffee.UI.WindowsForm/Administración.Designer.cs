@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administracion));
             this.Proveedores = new System.Windows.Forms.TabPage();
-            this.cmbProductos = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnGuardarProveedor = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnMostrarProveedores = new System.Windows.Forms.Button();
-            this.txt_IdProduct = new System.Windows.Forms.TextBox();
+            this.cmbProductos = new System.Windows.Forms.ComboBox();
             this.txtNombreProveedor = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
             this.lblIdproducto = new System.Windows.Forms.Label();
-            this.btnGuardarProveedor = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.tbcAdministracion = new System.Windows.Forms.TabControl();
             this.Empleados = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnCancelarEM = new System.Windows.Forms.Button();
-            this.btnShowEmpleados = new System.Windows.Forms.Button();
             this.btnSaveEmpleado = new System.Windows.Forms.Button();
+            this.btnShowEmpleados = new System.Windows.Forms.Button();
             this.cmbAreas = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -51,39 +51,39 @@
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Areas = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.CancelarArea = new System.Windows.Forms.Button();
-            this.MostrarAreas = new System.Windows.Forms.Button();
             this.SaveAreas = new System.Windows.Forms.Button();
+            this.MostrarAreas = new System.Windows.Forms.Button();
             this.txtNombreArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDAreas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Productos = new System.Windows.Forms.TabPage();
-            this.txtCostoXunidad = new System.Windows.Forms.TextBox();
-            this.CancelarProduct = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.MostrarProduct = new System.Windows.Forms.Button();
+            this.CancelarProduct = new System.Windows.Forms.Button();
+            this.GuardarProduct = new System.Windows.Forms.Button();
+            this.txtCostoXunidad = new System.Windows.Forms.TextBox();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.txtNombreproducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.GuardarProduct = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.Proveedores.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.tbcAdministracion.SuspendLayout();
             this.Empleados.SuspendLayout();
-            this.Areas.SuspendLayout();
-            this.Productos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.Areas.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.Productos.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Proveedores
@@ -91,9 +91,7 @@
             this.Proveedores.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Proveedores.Controls.Add(this.tableLayoutPanel1);
             this.Proveedores.Controls.Add(this.cmbProductos);
-            this.Proveedores.Controls.Add(this.txt_IdProduct);
             this.Proveedores.Controls.Add(this.txtNombreProveedor);
-            this.Proveedores.Controls.Add(this.label24);
             this.Proveedores.Controls.Add(this.lblIdproducto);
             this.Proveedores.Controls.Add(this.label26);
             this.Proveedores.Location = new System.Drawing.Point(4, 25);
@@ -103,15 +101,42 @@
             this.Proveedores.TabIndex = 3;
             this.Proveedores.Text = "Proveedores";
             // 
-            // cmbProductos
+            // tableLayoutPanel1
             // 
-            this.cmbProductos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbProductos.FormattingEnabled = true;
-            this.cmbProductos.Location = new System.Drawing.Point(257, 202);
-            this.cmbProductos.Name = "cmbProductos";
-            this.cmbProductos.Size = new System.Drawing.Size(350, 24);
-            this.cmbProductos.TabIndex = 77;
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0005F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0005F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0005F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.9985F));
+            this.tableLayoutPanel1.Controls.Add(this.button2, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnGuardarProveedor, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnMostrarProveedores, 2, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(32, 259);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(575, 79);
+            this.tableLayoutPanel1.TabIndex = 78;
+            // 
+            // btnGuardarProveedor
+            // 
+            this.btnGuardarProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarProveedor.Location = new System.Drawing.Point(3, 3);
+            this.btnGuardarProveedor.Name = "btnGuardarProveedor";
+            this.btnGuardarProveedor.Size = new System.Drawing.Size(109, 73);
+            this.btnGuardarProveedor.TabIndex = 55;
+            this.btnGuardarProveedor.Text = "Guardar datos";
+            this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardarProveedor.UseVisualStyleBackColor = true;
+            this.btnGuardarProveedor.Click += new System.EventHandler(this.btnGuardarProveedor_Click);
             // 
             // btnCancelar
             // 
@@ -119,9 +144,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.Location = new System.Drawing.Point(194, 3);
+            this.btnCancelar.Location = new System.Drawing.Point(118, 3);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(185, 73);
+            this.btnCancelar.Size = new System.Drawing.Size(109, 73);
             this.btnCancelar.TabIndex = 76;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,69 +159,47 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMostrarProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMostrarProveedores.Location = new System.Drawing.Point(385, 3);
+            this.btnMostrarProveedores.Location = new System.Drawing.Point(233, 3);
             this.btnMostrarProveedores.Name = "btnMostrarProveedores";
-            this.btnMostrarProveedores.Size = new System.Drawing.Size(187, 73);
+            this.btnMostrarProveedores.Size = new System.Drawing.Size(109, 73);
             this.btnMostrarProveedores.TabIndex = 64;
             this.btnMostrarProveedores.Text = "Mostrar datos guardados";
             this.btnMostrarProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMostrarProveedores.UseVisualStyleBackColor = true;
             this.btnMostrarProveedores.Click += new System.EventHandler(this.btnMostrarProveedores_Click);
             // 
-            // txt_IdProduct
+            // cmbProductos
             // 
-            this.txt_IdProduct.Enabled = false;
-            this.txt_IdProduct.Location = new System.Drawing.Point(257, 48);
-            this.txt_IdProduct.Name = "txt_IdProduct";
-            this.txt_IdProduct.Size = new System.Drawing.Size(32, 22);
-            this.txt_IdProduct.TabIndex = 57;
+            this.cmbProductos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbProductos.FormattingEnabled = true;
+            this.cmbProductos.Location = new System.Drawing.Point(254, 163);
+            this.cmbProductos.Name = "cmbProductos";
+            this.cmbProductos.Size = new System.Drawing.Size(350, 24);
+            this.cmbProductos.TabIndex = 77;
             // 
             // txtNombreProveedor
             // 
             this.txtNombreProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreProveedor.Location = new System.Drawing.Point(257, 125);
+            this.txtNombreProveedor.Location = new System.Drawing.Point(254, 86);
             this.txtNombreProveedor.Name = "txtNombreProveedor";
             this.txtNombreProveedor.Size = new System.Drawing.Size(350, 22);
             this.txtNombreProveedor.TabIndex = 54;
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(29, 51);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(111, 16);
-            this.label24.TabIndex = 58;
-            this.label24.Text = "ID del proveedor:";
-            // 
             // lblIdproducto
             // 
             this.lblIdproducto.AutoSize = true;
-            this.lblIdproducto.Location = new System.Drawing.Point(29, 206);
+            this.lblIdproducto.Location = new System.Drawing.Point(26, 167);
             this.lblIdproducto.Name = "lblIdproducto";
             this.lblIdproducto.Size = new System.Drawing.Size(183, 16);
             this.lblIdproducto.TabIndex = 56;
             this.lblIdproducto.Text = "Seleccióne el ID del producto";
             // 
-            // btnGuardarProveedor
-            // 
-            this.btnGuardarProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarProveedor.Location = new System.Drawing.Point(3, 3);
-            this.btnGuardarProveedor.Name = "btnGuardarProveedor";
-            this.btnGuardarProveedor.Size = new System.Drawing.Size(185, 73);
-            this.btnGuardarProveedor.TabIndex = 55;
-            this.btnGuardarProveedor.Text = "Guardar datos";
-            this.btnGuardarProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardarProveedor.UseVisualStyleBackColor = true;
-            this.btnGuardarProveedor.Click += new System.EventHandler(this.btnGuardarProveedor_Click);
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(29, 128);
+            this.label26.Location = new System.Drawing.Point(26, 89);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(206, 16);
             this.label26.TabIndex = 53;
@@ -234,35 +237,38 @@
             this.Empleados.TabIndex = 4;
             this.Empleados.Text = "Empleados";
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.btnCancelarEM, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSaveEmpleado, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnShowEmpleados, 2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 275);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(588, 79);
+            this.tableLayoutPanel2.TabIndex = 79;
+            // 
             // btnCancelarEM
             // 
             this.btnCancelarEM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelarEM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelarEM.Location = new System.Drawing.Point(199, 3);
+            this.btnCancelarEM.Location = new System.Drawing.Point(198, 3);
             this.btnCancelarEM.Name = "btnCancelarEM";
-            this.btnCancelarEM.Size = new System.Drawing.Size(190, 73);
+            this.btnCancelarEM.Size = new System.Drawing.Size(189, 73);
             this.btnCancelarEM.TabIndex = 75;
             this.btnCancelarEM.Text = "Cancelar";
             this.btnCancelarEM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelarEM.UseVisualStyleBackColor = true;
             this.btnCancelarEM.Click += new System.EventHandler(this.btnCancelarEM_Click);
-            // 
-            // btnShowEmpleados
-            // 
-            this.btnShowEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnShowEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShowEmpleados.Location = new System.Drawing.Point(395, 3);
-            this.btnShowEmpleados.Name = "btnShowEmpleados";
-            this.btnShowEmpleados.Size = new System.Drawing.Size(190, 73);
-            this.btnShowEmpleados.TabIndex = 67;
-            this.btnShowEmpleados.Text = "Mostrar datos guardados";
-            this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnShowEmpleados.UseVisualStyleBackColor = true;
-            this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
             // 
             // btnSaveEmpleado
             // 
@@ -272,12 +278,27 @@
             this.btnSaveEmpleado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveEmpleado.Location = new System.Drawing.Point(3, 3);
             this.btnSaveEmpleado.Name = "btnSaveEmpleado";
-            this.btnSaveEmpleado.Size = new System.Drawing.Size(190, 73);
+            this.btnSaveEmpleado.Size = new System.Drawing.Size(189, 73);
             this.btnSaveEmpleado.TabIndex = 66;
             this.btnSaveEmpleado.Text = "Guardar datos";
             this.btnSaveEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSaveEmpleado.UseVisualStyleBackColor = true;
             this.btnSaveEmpleado.Click += new System.EventHandler(this.btnSaveEmpleado_Click);
+            // 
+            // btnShowEmpleados
+            // 
+            this.btnShowEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnShowEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShowEmpleados.Location = new System.Drawing.Point(393, 3);
+            this.btnShowEmpleados.Name = "btnShowEmpleados";
+            this.btnShowEmpleados.Size = new System.Drawing.Size(192, 73);
+            this.btnShowEmpleados.TabIndex = 67;
+            this.btnShowEmpleados.Text = "Mostrar datos guardados";
+            this.btnShowEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnShowEmpleados.UseVisualStyleBackColor = true;
+            this.btnShowEmpleados.Click += new System.EventHandler(this.btnShowEmpleados_Click);
             // 
             // cmbAreas
             // 
@@ -349,35 +370,38 @@
             this.Areas.TabIndex = 5;
             this.Areas.Text = "Áreas";
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.CancelarArea, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.SaveAreas, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.MostrarAreas, 2, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(28, 262);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(582, 82);
+            this.tableLayoutPanel3.TabIndex = 79;
+            // 
             // CancelarArea
             // 
             this.CancelarArea.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CancelarArea.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CancelarArea.Location = new System.Drawing.Point(197, 3);
+            this.CancelarArea.Location = new System.Drawing.Point(196, 3);
             this.CancelarArea.Name = "CancelarArea";
-            this.CancelarArea.Size = new System.Drawing.Size(188, 76);
+            this.CancelarArea.Size = new System.Drawing.Size(187, 76);
             this.CancelarArea.TabIndex = 74;
             this.CancelarArea.Text = "Cancelar";
             this.CancelarArea.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarArea.UseVisualStyleBackColor = true;
             this.CancelarArea.Click += new System.EventHandler(this.CancelarArea_Click);
-            // 
-            // MostrarAreas
-            // 
-            this.MostrarAreas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MostrarAreas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MostrarAreas.Location = new System.Drawing.Point(391, 3);
-            this.MostrarAreas.Name = "MostrarAreas";
-            this.MostrarAreas.Size = new System.Drawing.Size(188, 76);
-            this.MostrarAreas.TabIndex = 73;
-            this.MostrarAreas.Text = "Mostrar datos guardados";
-            this.MostrarAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.MostrarAreas.UseVisualStyleBackColor = true;
-            this.MostrarAreas.Click += new System.EventHandler(this.MostrarAreas_Click);
             // 
             // SaveAreas
             // 
@@ -387,12 +411,27 @@
             this.SaveAreas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SaveAreas.Location = new System.Drawing.Point(3, 3);
             this.SaveAreas.Name = "SaveAreas";
-            this.SaveAreas.Size = new System.Drawing.Size(188, 76);
+            this.SaveAreas.Size = new System.Drawing.Size(187, 76);
             this.SaveAreas.TabIndex = 72;
             this.SaveAreas.Text = "Guardar datos";
             this.SaveAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.SaveAreas.UseVisualStyleBackColor = true;
             this.SaveAreas.Click += new System.EventHandler(this.SaveAreas_Click);
+            // 
+            // MostrarAreas
+            // 
+            this.MostrarAreas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MostrarAreas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MostrarAreas.Location = new System.Drawing.Point(389, 3);
+            this.MostrarAreas.Name = "MostrarAreas";
+            this.MostrarAreas.Size = new System.Drawing.Size(190, 76);
+            this.MostrarAreas.TabIndex = 73;
+            this.MostrarAreas.Text = "Mostrar datos guardados";
+            this.MostrarAreas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MostrarAreas.UseVisualStyleBackColor = true;
+            this.MostrarAreas.Click += new System.EventHandler(this.MostrarAreas_Click);
             // 
             // txtNombreArea
             // 
@@ -446,14 +485,38 @@
             this.Productos.TabIndex = 6;
             this.Productos.Text = "Productos";
             // 
-            // txtCostoXunidad
+            // tableLayoutPanel4
             // 
-            this.txtCostoXunidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCostoXunidad.Location = new System.Drawing.Point(247, 198);
-            this.txtCostoXunidad.Name = "txtCostoXunidad";
-            this.txtCostoXunidad.Size = new System.Drawing.Size(361, 22);
-            this.txtCostoXunidad.TabIndex = 86;
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.MostrarProduct, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.CancelarProduct, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.GuardarProduct, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(40, 267);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(568, 80);
+            this.tableLayoutPanel4.TabIndex = 87;
+            // 
+            // MostrarProduct
+            // 
+            this.MostrarProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MostrarProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MostrarProduct.Location = new System.Drawing.Point(381, 3);
+            this.MostrarProduct.Name = "MostrarProduct";
+            this.MostrarProduct.Size = new System.Drawing.Size(184, 74);
+            this.MostrarProduct.TabIndex = 84;
+            this.MostrarProduct.Text = "Mostrar Productos";
+            this.MostrarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MostrarProduct.UseVisualStyleBackColor = true;
+            this.MostrarProduct.Click += new System.EventHandler(this.MostrarProduct_Click);
             // 
             // CancelarProduct
             // 
@@ -470,20 +533,29 @@
             this.CancelarProduct.UseVisualStyleBackColor = true;
             this.CancelarProduct.Click += new System.EventHandler(this.CancelarProduct_Click);
             // 
-            // MostrarProduct
+            // GuardarProduct
             // 
-            this.MostrarProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GuardarProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MostrarProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MostrarProduct.Location = new System.Drawing.Point(381, 3);
-            this.MostrarProduct.Name = "MostrarProduct";
-            this.MostrarProduct.Size = new System.Drawing.Size(184, 74);
-            this.MostrarProduct.TabIndex = 84;
-            this.MostrarProduct.Text = "Mostrar Productos";
-            this.MostrarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.MostrarProduct.UseVisualStyleBackColor = true;
-            this.MostrarProduct.Click += new System.EventHandler(this.MostrarProduct_Click);
+            this.GuardarProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GuardarProduct.Location = new System.Drawing.Point(3, 3);
+            this.GuardarProduct.Name = "GuardarProduct";
+            this.GuardarProduct.Size = new System.Drawing.Size(183, 74);
+            this.GuardarProduct.TabIndex = 80;
+            this.GuardarProduct.Text = "Guardar Producto";
+            this.GuardarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.GuardarProduct.UseVisualStyleBackColor = true;
+            this.GuardarProduct.Click += new System.EventHandler(this.GuardarProduct_Click);
+            // 
+            // txtCostoXunidad
+            // 
+            this.txtCostoXunidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCostoXunidad.Location = new System.Drawing.Point(247, 198);
+            this.txtCostoXunidad.Name = "txtCostoXunidad";
+            this.txtCostoXunidad.Size = new System.Drawing.Size(361, 22);
+            this.txtCostoXunidad.TabIndex = 86;
             // 
             // txtIdProducto
             // 
@@ -520,21 +592,6 @@
             this.label6.TabIndex = 81;
             this.label6.Text = "Ingrese el costo por unidad:";
             // 
-            // GuardarProduct
-            // 
-            this.GuardarProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GuardarProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GuardarProduct.Location = new System.Drawing.Point(3, 3);
-            this.GuardarProduct.Name = "GuardarProduct";
-            this.GuardarProduct.Size = new System.Drawing.Size(183, 74);
-            this.GuardarProduct.TabIndex = 80;
-            this.GuardarProduct.Text = "Guardar Producto";
-            this.GuardarProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.GuardarProduct.UseVisualStyleBackColor = true;
-            this.GuardarProduct.Click += new System.EventHandler(this.GuardarProduct_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -570,77 +627,33 @@
             this.label8.Text = "Panel de control administrador";
             this.label8.UseMnemonic = false;
             // 
-            // tableLayoutPanel1
+            // button1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.btnGuardarProveedor, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnMostrarProveedores, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(32, 259);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(575, 79);
-            this.tableLayoutPanel1.TabIndex = 78;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(348, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 73);
+            this.button1.TabIndex = 79;
+            this.button1.Text = "Caja";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel2
+            // button2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.btnCancelarEM, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnSaveEmpleado, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnShowEmpleados, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 275);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(588, 79);
-            this.tableLayoutPanel2.TabIndex = 79;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Controls.Add(this.CancelarArea, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.SaveAreas, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.MostrarAreas, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(28, 262);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(582, 82);
-            this.tableLayoutPanel3.TabIndex = 79;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Controls.Add(this.MostrarProduct, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.CancelarProduct, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.GuardarProduct, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(40, 267);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(568, 80);
-            this.tableLayoutPanel4.TabIndex = 87;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Location = new System.Drawing.Point(463, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 73);
+            this.button2.TabIndex = 80;
+            this.button2.Text = "Cerrar sesión";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Administracion
             // 
@@ -656,18 +669,18 @@
             this.Load += new System.EventHandler(this.Administración_Load);
             this.Proveedores.ResumeLayout(false);
             this.Proveedores.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.tbcAdministracion.ResumeLayout(false);
             this.Empleados.ResumeLayout(false);
             this.Empleados.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.Areas.ResumeLayout(false);
             this.Areas.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.Productos.ResumeLayout(false);
             this.Productos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -676,9 +689,7 @@
         #endregion
         private System.Windows.Forms.TabPage Proveedores;
         private System.Windows.Forms.Button btnMostrarProveedores;
-        private System.Windows.Forms.TextBox txt_IdProduct;
         private System.Windows.Forms.TextBox txtNombreProveedor;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label lblIdproducto;
         private System.Windows.Forms.Button btnGuardarProveedor;
         private System.Windows.Forms.Label label26;
@@ -719,5 +730,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
