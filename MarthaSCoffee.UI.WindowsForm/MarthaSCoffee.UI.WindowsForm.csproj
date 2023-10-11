@@ -90,12 +90,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelControlUsuarioEstandar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PanelControlUsuarioEstandar.Designer.cs">
-      <DependentUpon>PanelControlUsuarioEstandar.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PanelControlUsuarioEstandar.resx">
-      <DependentUpon>PanelControlUsuarioEstandar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
