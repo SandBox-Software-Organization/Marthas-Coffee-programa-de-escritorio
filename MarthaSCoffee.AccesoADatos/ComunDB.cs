@@ -12,7 +12,7 @@ namespace MarthaSCoffee.AccesoADatos
     {
         const string StringDeConexion = @"Data Source=DESKTOP-OAO2BUA\MSSQLSERVER01;Initial Catalog=FINALLY_DB_SISTEMA_MARTHASCOFFE;Integrated Security=True";
 
-        private static SqlConnection ObtenerConexion()
+        public static SqlConnection ObtenerConexion()
         {
             SqlConnection _conexion = new SqlConnection(StringDeConexion);
             _conexion.Open();
