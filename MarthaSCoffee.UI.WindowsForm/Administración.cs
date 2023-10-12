@@ -241,7 +241,14 @@ namespace MarthaSCoffee.UI.WindowsForm
             }
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmCaja mm = new frmCaja();
+            if (mm.ShowDialog() == DialogResult.OK)
+            {
+                ;
+            }
+        }
     }
 }
 

@@ -10,6 +10,10 @@ namespace MarthaSCoffee.LogicaDeNegocio
 {
     public class UsuariosBL
     {
-        
+        UsuariosDAL usuaridal = new UsuariosDAL();
+        public bool LOGINUSER(string user, string password)
+        {
+            return usuaridal.LOGIN(user, password);
+        }
     }
 }
