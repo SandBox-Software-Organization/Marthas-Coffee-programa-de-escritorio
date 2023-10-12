@@ -50,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.c = new System.Windows.Forms.Label();
-            this.txtIdEmpleado = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.Areas = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.CancelarArea = new System.Windows.Forms.Button();
@@ -59,17 +57,13 @@
             this.MostrarAreas = new System.Windows.Forms.Button();
             this.txtNombreArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtIDAreas = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.Productos = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.MostrarProduct = new System.Windows.Forms.Button();
             this.CancelarProduct = new System.Windows.Forms.Button();
             this.GuardarProduct = new System.Windows.Forms.Button();
             this.txtCostoXunidad = new System.Windows.Forms.TextBox();
-            this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.txtNombreproducto = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -259,8 +253,6 @@
             this.Empleados.Controls.Add(this.label2);
             this.Empleados.Controls.Add(this.txtNombre);
             this.Empleados.Controls.Add(this.c);
-            this.Empleados.Controls.Add(this.txtIdEmpleado);
-            this.Empleados.Controls.Add(this.label1);
             this.Empleados.Location = new System.Drawing.Point(4, 25);
             this.Empleados.Name = "Empleados";
             this.Empleados.Size = new System.Drawing.Size(639, 376);
@@ -278,7 +270,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnCancelarEM, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSaveEmpleado, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnShowEmpleados, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 275);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(28, 209);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -336,7 +328,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbAreas.DisplayMember = "IDAREA";
             this.cmbAreas.FormattingEnabled = true;
-            this.cmbAreas.Location = new System.Drawing.Point(261, 179);
+            this.cmbAreas.Location = new System.Drawing.Point(261, 132);
             this.cmbAreas.Name = "cmbAreas";
             this.cmbAreas.Size = new System.Drawing.Size(355, 24);
             this.cmbAreas.TabIndex = 65;
@@ -345,7 +337,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 182);
+            this.label2.Location = new System.Drawing.Point(25, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 16);
             this.label2.TabIndex = 64;
@@ -355,7 +347,7 @@
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(261, 116);
+            this.txtNombre.Location = new System.Drawing.Point(261, 69);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(355, 22);
             this.txtNombre.TabIndex = 61;
@@ -363,28 +355,11 @@
             // c
             // 
             this.c.AutoSize = true;
-            this.c.Location = new System.Drawing.Point(25, 116);
+            this.c.Location = new System.Drawing.Point(25, 69);
             this.c.Name = "c";
             this.c.Size = new System.Drawing.Size(219, 16);
             this.c.TabIndex = 62;
             this.c.Text = "Ingrese los nombres del empleado:";
-            // 
-            // txtIdEmpleado
-            // 
-            this.txtIdEmpleado.Enabled = false;
-            this.txtIdEmpleado.Location = new System.Drawing.Point(261, 52);
-            this.txtIdEmpleado.Name = "txtIdEmpleado";
-            this.txtIdEmpleado.Size = new System.Drawing.Size(32, 22);
-            this.txtIdEmpleado.TabIndex = 59;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 16);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "ID del empleado:";
             // 
             // Areas
             // 
@@ -392,8 +367,6 @@
             this.Areas.Controls.Add(this.tableLayoutPanel3);
             this.Areas.Controls.Add(this.txtNombreArea);
             this.Areas.Controls.Add(this.label3);
-            this.Areas.Controls.Add(this.txtIDAreas);
-            this.Areas.Controls.Add(this.label4);
             this.Areas.Location = new System.Drawing.Point(4, 25);
             this.Areas.Name = "Areas";
             this.Areas.Size = new System.Drawing.Size(639, 376);
@@ -411,7 +384,7 @@
             this.tableLayoutPanel3.Controls.Add(this.CancelarArea, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.SaveAreas, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.MostrarAreas, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(28, 262);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(28, 189);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -467,7 +440,7 @@
             // 
             this.txtNombreArea.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreArea.Location = new System.Drawing.Point(211, 138);
+            this.txtNombreArea.Location = new System.Drawing.Point(211, 95);
             this.txtNombreArea.Name = "txtNombreArea";
             this.txtNombreArea.Size = new System.Drawing.Size(399, 22);
             this.txtNombreArea.TabIndex = 70;
@@ -475,28 +448,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 141);
+            this.label3.Location = new System.Drawing.Point(25, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 16);
             this.label3.TabIndex = 71;
             this.label3.Text = "Ingrese el nombre del área:";
-            // 
-            // txtIDAreas
-            // 
-            this.txtIDAreas.Enabled = false;
-            this.txtIDAreas.Location = new System.Drawing.Point(211, 63);
-            this.txtIDAreas.Name = "txtIDAreas";
-            this.txtIDAreas.Size = new System.Drawing.Size(37, 22);
-            this.txtIDAreas.TabIndex = 68;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 16);
-            this.label4.TabIndex = 69;
-            this.label4.Text = "ID del área:";
             // 
             // Productos
             // 
@@ -504,9 +460,7 @@
             this.Productos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Productos.Controls.Add(this.tableLayoutPanel4);
             this.Productos.Controls.Add(this.txtCostoXunidad);
-            this.Productos.Controls.Add(this.txtIdProducto);
             this.Productos.Controls.Add(this.txtNombreproducto);
-            this.Productos.Controls.Add(this.label5);
             this.Productos.Controls.Add(this.label6);
             this.Productos.Controls.Add(this.label7);
             this.Productos.Location = new System.Drawing.Point(4, 25);
@@ -526,7 +480,7 @@
             this.tableLayoutPanel4.Controls.Add(this.MostrarProduct, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.CancelarProduct, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.GuardarProduct, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(40, 267);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(37, 222);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -582,41 +536,24 @@
             // 
             this.txtCostoXunidad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCostoXunidad.Location = new System.Drawing.Point(247, 198);
+            this.txtCostoXunidad.Location = new System.Drawing.Point(244, 151);
             this.txtCostoXunidad.Name = "txtCostoXunidad";
             this.txtCostoXunidad.Size = new System.Drawing.Size(361, 22);
             this.txtCostoXunidad.TabIndex = 86;
-            // 
-            // txtIdProducto
-            // 
-            this.txtIdProducto.Enabled = false;
-            this.txtIdProducto.Location = new System.Drawing.Point(247, 44);
-            this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(33, 22);
-            this.txtIdProducto.TabIndex = 82;
             // 
             // txtNombreproducto
             // 
             this.txtNombreproducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreproducto.Location = new System.Drawing.Point(247, 124);
+            this.txtNombreproducto.Location = new System.Drawing.Point(244, 77);
             this.txtNombreproducto.Name = "txtNombreproducto";
             this.txtNombreproducto.Size = new System.Drawing.Size(361, 22);
             this.txtNombreproducto.TabIndex = 79;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 16);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "ID del producto:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 201);
+            this.label6.Location = new System.Drawing.Point(34, 154);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(172, 16);
             this.label6.TabIndex = 81;
@@ -625,7 +562,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 127);
+            this.label7.Location = new System.Drawing.Point(34, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(196, 16);
             this.label7.TabIndex = 78;
@@ -697,8 +634,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TabControl tbcAdministracion;
         private System.Windows.Forms.TabPage Empleados;
-        private System.Windows.Forms.TextBox txtIdEmpleado;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbAreas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
@@ -710,8 +645,6 @@
         private System.Windows.Forms.Button SaveAreas;
         private System.Windows.Forms.TextBox txtNombreArea;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtIDAreas;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button CancelarArea;
         private System.Windows.Forms.Button btnCancelarEM;
         private System.Windows.Forms.Button btnCancelar;
@@ -719,9 +652,7 @@
         private System.Windows.Forms.TabPage Productos;
         private System.Windows.Forms.Button CancelarProduct;
         private System.Windows.Forms.Button MostrarProduct;
-        private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.TextBox txtNombreproducto;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button GuardarProduct;
         private System.Windows.Forms.Label label7;

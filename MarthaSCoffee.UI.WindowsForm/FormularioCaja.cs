@@ -90,8 +90,7 @@ namespace MarthaSCoffee.UI.WindowsForm
                     //if (pago.ShowDialog() == DialogResult.OK)
                     //{
                       //  ;
-                    //}
-                    int resultado = PedidosBLL.Insertar(xpedido);
+                    //}                    int resultado = PedidosBLL.Insertar(xpedido);
 
                     Limpiar();
                   
@@ -99,5 +98,7 @@ namespace MarthaSCoffee.UI.WindowsForm
             }
         
         }
+
+       
     }
 }
