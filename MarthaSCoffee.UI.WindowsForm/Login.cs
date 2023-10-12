@@ -35,8 +35,8 @@ namespace MarthaSCoffee.UI.WindowsForm
                 var validlogin = user.LOGINUSER(textBox2.Text, textBox1.Text);
                 if (validlogin == true)
                 {
-                    frmCaja caja = new frmCaja();
-                    caja.Show();
+                    Administracion Ad = new Administracion();
+                    Ad.Show();
                     this.Hide();
                 }
                 else
