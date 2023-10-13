@@ -23,9 +23,9 @@ namespace MarthaSCoffee.UI.WindowsForm
         public void LimpiarTextos()
         {
             //Función limpiar
-            txtIDAreas.Text = string.Empty;
+           
             txtNombreArea.Text = string.Empty;
-            txtIdEmpleado.Text = string.Empty;
+           
             txtNombre.Text = string.Empty;
             txtNombreProveedor.Text = string.Empty;
             txtNombreproducto.Text = string.Empty;
@@ -127,7 +127,7 @@ namespace MarthaSCoffee.UI.WindowsForm
         //metodo que se encargara de los comboBox
         private void cargar()
         {
-            cmbAreas.DataSource = EmpleadosBL.Areas();
+            cmbAreas.DataSource = AreasBL.ComboAreas();
             cmbAreas.DisplayMember = "NOMBRE_AREA";
             cmbAreas.ValueMember = "IDAREA";
            

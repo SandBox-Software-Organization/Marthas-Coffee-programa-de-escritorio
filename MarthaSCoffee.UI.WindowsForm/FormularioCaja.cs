@@ -22,9 +22,9 @@ namespace MarthaSCoffee.UI.WindowsForm
         public void Limpiar()
         {
             lblNumO.Text = string.Empty;
-            lblMontoTotal.Text = string.Empty;
+            lblPrecio.Text = string.Empty;
             txtNomCliente.Text = string.Empty;
-            numericUpDown1.Text = string.Empty;
+            NUCantidad.Text = string.Empty;
         }
         public void cargarComboBox()
         {
@@ -51,6 +51,7 @@ namespace MarthaSCoffee.UI.WindowsForm
         {
             cargarComboBox();
             cargarComboBoxPago();
+            btnCalcular.Click += new EventHandler(btnCalcular_Click);
         }
 
         private void Realizar_Click(object sender, EventArgs e)
@@ -82,7 +83,7 @@ namespace MarthaSCoffee.UI.WindowsForm
                     xpedido.FK_IdPago = Convert.ToInt32(comboPago.SelectedIndex) + 1;
                    
 
-                    float tipopago = (float)Convert.ToDouble(lblMontoTotal.Text);
+                    float tipopago = (float)Convert.ToDouble(lblPrecio.Text);
                     xpedido.MontoTotal = (float)tipopago;
 
                     
@@ -99,6 +100,34 @@ namespace MarthaSCoffee.UI.WindowsForm
         
         }
 
-       
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            var producto = cmbProduc.SelectedValue as Producto;
+
+
+            int cantidad = (int)NUCantidad.Value;
+
+
+            if (producto != null && cantidad > 0)
+            {
+
+                var total = producto.CostoxUnidad * cantidad;
+
+                lblMontoTotal.Text = total.ToString();
+
+            }
+        }
+
+        private void cmbProduc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var producto = cmbProduc.SelectedValue as Producto;
+            if (producto != null)
+            {
+                var precio = producto.CostoxUnidad;
+
+                lblPrecio.Text = precio.ToString();
+                // Mostrar el precio en el formulario
+            }
+        }
     }
 }

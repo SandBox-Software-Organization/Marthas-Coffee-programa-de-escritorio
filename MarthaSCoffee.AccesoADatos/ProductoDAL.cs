@@ -27,7 +27,7 @@ namespace MarthaSCoffee.AccesoADatos
                 Producto xproducto = new Producto();
                 xproducto.IdProducto = Leer.GetInt32(0);
                 xproducto.NombreProducto = Leer.GetString(1);
-                xproducto.CostoxUnidad = (float)Leer.GetDouble(2);
+                xproducto.CostoxUnidad = (float)Leer.GetDecimal(2);
                 ListadoProducto.Add(xproducto);
             }
             return ListadoProducto;
@@ -45,7 +45,7 @@ namespace MarthaSCoffee.AccesoADatos
                 Producto xproducto = new Producto();
                 xproducto.IdProducto = Leer.GetInt32(0);
                 xproducto.NombreProducto = Leer.GetString(1);
-                xproducto.CostoxUnidad = (float)Leer.GetDouble(2);
+                xproducto.CostoxUnidad = (float)Leer.GetDecimal(2);
                 ListadoProducto.Add(xproducto);
             }
             return ListadoProducto;

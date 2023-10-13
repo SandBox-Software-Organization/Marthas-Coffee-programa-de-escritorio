@@ -30,7 +30,7 @@
         {
             this.MostrarRegistros = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.NUCantidad = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.combxTipoOrden = new System.Windows.Forms.ComboBox();
@@ -48,7 +48,7 @@
             this.cmbEmpleados = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblMontoTotal = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboPago = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,11 +56,15 @@
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnGuardar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblMontoTotal = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.NUCantidad)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // MostrarRegistros
@@ -85,12 +89,12 @@
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown1
+            // NUCantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(147, 374);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(88, 20);
-            this.numericUpDown1.TabIndex = 82;
+            this.NUCantidad.Location = new System.Drawing.Point(147, 374);
+            this.NUCantidad.Name = "NUCantidad";
+            this.NUCantidad.Size = new System.Drawing.Size(88, 20);
+            this.NUCantidad.TabIndex = 82;
             // 
             // label2
             // 
@@ -113,6 +117,7 @@
             this.btnCalcular.TabIndex = 80;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // combxTipoOrden
             // 
@@ -235,6 +240,7 @@
             this.cmbProduc.Name = "cmbProduc";
             this.cmbProduc.Size = new System.Drawing.Size(122, 21);
             this.cmbProduc.TabIndex = 91;
+            this.cmbProduc.SelectedIndexChanged += new System.EventHandler(this.cmbProduc_SelectedIndexChanged);
             // 
             // cmbEmpleados
             // 
@@ -248,7 +254,7 @@
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.lblMontoTotal);
+            this.panel4.Controls.Add(this.lblPrecio);
             this.panel4.Location = new System.Drawing.Point(334, 287);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(322, 45);
@@ -262,21 +268,21 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(7, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 34;
-            this.label3.Text = "Total:";
+            this.label3.Text = "Precio del producto:";
             // 
-            // lblMontoTotal
+            // lblPrecio
             // 
-            this.lblMontoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMontoTotal.AutoSize = true;
-            this.lblMontoTotal.Location = new System.Drawing.Point(143, 17);
-            this.lblMontoTotal.Name = "lblMontoTotal";
-            this.lblMontoTotal.Size = new System.Drawing.Size(13, 13);
-            this.lblMontoTotal.TabIndex = 37;
-            this.lblMontoTotal.Text = "0";
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(143, 17);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(13, 13);
+            this.lblPrecio.TabIndex = 37;
+            this.lblPrecio.Text = "0";
             // 
             // panel3
             // 
@@ -333,7 +339,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Location = new System.Drawing.Point(330, 349);
+            this.panel1.Location = new System.Drawing.Point(334, 400);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 45);
             this.panel1.TabIndex = 94;
@@ -348,11 +354,46 @@
             this.btnGuardar.Text = "Realizar transacción";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.lblMontoTotal);
+            this.panel5.Location = new System.Drawing.Point(334, 349);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(322, 45);
+            this.panel5.TabIndex = 98;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Total:";
+            // 
+            // lblMontoTotal
+            // 
+            this.lblMontoTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMontoTotal.AutoSize = true;
+            this.lblMontoTotal.Location = new System.Drawing.Point(143, 17);
+            this.lblMontoTotal.Name = "lblMontoTotal";
+            this.lblMontoTotal.Size = new System.Drawing.Size(13, 13);
+            this.lblMontoTotal.TabIndex = 37;
+            this.lblMontoTotal.Text = "0";
+            // 
             // frmCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 562);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -363,7 +404,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.MostrarRegistros);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.NUCantidad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.combxTipoOrden);
@@ -378,7 +419,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmCaja";
             this.Load += new System.EventHandler(this.frmCaja_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUCantidad)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -386,6 +427,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,7 +438,7 @@
 
         private System.Windows.Forms.Button MostrarRegistros;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown NUCantidad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.ComboBox combxTipoOrden;
@@ -413,7 +456,7 @@
         private System.Windows.Forms.ComboBox cmbEmpleados;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblMontoTotal;
+        private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ComboBox comboPago;
         private System.Windows.Forms.Label label4;
@@ -421,5 +464,8 @@
         private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblMontoTotal;
     }
 }

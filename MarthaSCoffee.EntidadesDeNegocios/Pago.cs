@@ -10,7 +10,7 @@ namespace MarthaSCoffee.EntidadesDeNegocios
     {
         public int IdPago { get; set; }
         public string TipoPago { get; set; }
-        //public float MontoTotal { get; set; }
+     
 
     }
 }
