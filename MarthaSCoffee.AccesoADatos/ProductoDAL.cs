@@ -50,5 +50,22 @@ namespace MarthaSCoffee.AccesoADatos
             }
             return ListadoProducto;
         }
+
+        public decimal ComprarProducto(Producto producto, int cantidad)
+        {
+            // Validamos que el producto no sea nulo y tenga un precio válido luego  
+            if (producto == null || producto.CostoxUnidad <= 0)
+                throw new ArgumentException("El producto no es válido");
+
+            //vlidamos que la cantidad sea mayor que cero
+            if (cantidad <= 0)
+                throw new ArgumentException("La cantidad debe ser mayor que cero");
+
+           //calculamos x por la vantidad
+            decimal total = (decimal)(producto.CostoxUnidad * cantidad);
+            
+           
+            return total;
+        }
     }
 }

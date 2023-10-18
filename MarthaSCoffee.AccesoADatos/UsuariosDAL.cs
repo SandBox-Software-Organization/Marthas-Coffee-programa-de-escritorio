@@ -23,7 +23,7 @@ namespace MarthaSCoffee.AccesoADatos
                 {
 
                     _comando.Connection = connection;
-                    _comando.CommandText = "select * from USUARIOS where TIPO_USUARIO=@user and PASSWOR=@pass";
+                    _comando.CommandText = "select * from USUARIOS where TIPO_USUARIO=@user and CONTRASEÑA=@pass";
                     _comando.Parameters.AddWithValue("@user", user);
                     _comando.Parameters.AddWithValue("@pass", password);
                     _comando.CommandType = CommandType.Text;

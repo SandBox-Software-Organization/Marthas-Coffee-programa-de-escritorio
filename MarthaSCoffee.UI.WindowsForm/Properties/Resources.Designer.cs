@@ -59,5 +59,25 @@ namespace MarthaSCoffee.UI.WindowsForm.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2701079_approve_check_complete_done_mark_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("2701079_approve_check_complete_done_mark_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2701079_approve_check_complete_done_mark_icon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("2701079_approve_check_complete_done_mark_icon (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
